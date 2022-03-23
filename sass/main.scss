@@ -2,15 +2,12 @@
 @import "base/_normalize.scss";
 @import "utils/_mixins.scss";
 @import "layout/_header.scss";
-@import "pages/_localisation.scss";
+@import "pages/_mobile-hp-intro.scss";
 
 
 * {
     font-family: "Roboto", sans-serif;
   }
   
-  .title-omf {
-    font-family: "Shrikhand", cursive;
-  }
-   
- 
+  
+  
