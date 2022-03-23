@@ -1,0 +1,9 @@
+.title-omf{
+    @include mobile-layout;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: x-large;
+}

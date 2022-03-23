@@ -1,4 +1,9 @@
 @import "base/_typography.scss";
+@import "base/_normalize.scss";
+@import "utils/_mixins.scss";
+@import "layout/_header.scss";
+@import "pages/_localisation.scss";
+
 
 * {
     font-family: "Roboto", sans-serif;
@@ -8,3 +13,4 @@
     font-family: "Shrikhand", cursive;
   }
    
+ 

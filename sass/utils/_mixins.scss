@@ -1,0 +1,7 @@
+@mixin mobile-layout {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: green;
+}
