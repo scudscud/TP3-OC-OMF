@@ -28,12 +28,15 @@
         height: 100px;
         margin-top: 45px;
         margin-bottom: 0;
-        font-weight: bolder;       
+        padding-right: 25px ;
+        font-size: 145%;
+        font-weight: bold;
+       
     }
     p{
         @include mobile-layout;
         margin:  0;
-        font-style: "light300";
+       
     }
     
 }
@@ -49,19 +52,20 @@
     height: 50px;
     background: linear-gradient($secondary,$primary);
     border-radius: 30px;
-    color: white;      
+    color: white;
+    @include box-shadow;      
 }   
 }
 
 .tuto{
     height: 320px;
     margin-bottom: 50px;
+    @include margin-hp;
  
     .tit-fonc{
         display: flex;
         width: 100%;
         height: 50px;
-        @include tit-hp;
         font-size: 140%;
         font-weight: bolder;   
     }
@@ -73,21 +77,19 @@
 }
 
 .resto{
-    width: 100%;
-    height: 1225px;
     background-color:#f6f6f6 ;
-    padding-top: 55px;
-
+    padding:55px 20px 65px 20px;
+    
     .tit-resto{
-        @include tit-hp;
-        height: 45px;
-        
-
+        width: 100%;
+        height: 30px;
+        margin-bottom: 0;
     }
  
 }
 
 .card-hp{
-    @include resto-card-hp
+
+    @include resto-card-hp;
     
 }

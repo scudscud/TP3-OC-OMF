@@ -1,8 +1,8 @@
 .title-omf{
-    @include mobile-layout;
-    height: 60px;
+    @include title-omf;
+    height: 65px;
     margin-top: 0;
     margin-bottom: 0;
     font-family: "Shrikhand", cursive;
-    font-size: 160%;
+    font-size: 180%;
 }
