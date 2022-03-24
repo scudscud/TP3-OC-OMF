@@ -1,8 +1,10 @@
 @import "base/_typography.scss";
 @import "base/_normalize.scss";
-@import "utils/_mixins.scss";
+@import "utils/_mixins-homepage.scss";
+@import "utils/_variables-homepage.scss";
 @import "layout/_header.scss";
 @import "pages/_mobile-hp-intro.scss";
+
 
 
 * {
