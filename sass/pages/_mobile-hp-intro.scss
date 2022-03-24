@@ -87,11 +87,11 @@
     }
  
 }
-
+/*
 .card-hp{
-    @include resto-card-hp;   
+    @include resto-card-hp-new-hidden;   
 }
-
-.card-hp-new{
+*/
+.card-hp{
     @include resto-card-hp-new;
 }

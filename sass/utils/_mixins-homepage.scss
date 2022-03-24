@@ -60,7 +60,7 @@
    
 }
 
-@mixin resto-card-hp {
+@mixin resto-card-hp-new{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -78,8 +78,20 @@
         border-radius: 10px 10px 0 0;
 
     }
-
-    
+    .new-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: 10px;
+        margin-right: 10px;
+        width: 80px;
+        height: 30px;
+        border-radius: 5px;
+        color: #008766;
+        background-color:$tertiary;  
+        
+    }
 
     .description{
         display: grid;
@@ -115,7 +127,7 @@
     
 }
 
-@mixin resto-card-hp-new{
+@mixin resto-card-hp-new-hidden{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -154,7 +166,7 @@
         border-radius: 5px;
         color: #008766;
         background-color:$tertiary;  
-      
+        visibility: hidden;
     }
     
 
