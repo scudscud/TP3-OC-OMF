@@ -28,7 +28,13 @@
     
 }
 
-@mixin tuto-card {
+@mixin hover-ligthen-boxshadow{
+ opacity: 0.8;
+ box-shadow: 0 7px 5px darken($color:  #e5e5e5, $amount: 20)
+    
+}
+
+@mixin tuto-card{
     flex-direction: row;
     height: 70px;
     margin: 0 0 20px 10px;
@@ -40,6 +46,7 @@
     &:hover { 
         background: #f5edff;
     }
+
     .number-fonc-tuto{
         display: flex;
         position: relative;
@@ -56,9 +63,8 @@
     .fa-mobile-screen-button,.fa-list,.fa-store {
         color: #7e7e7e;
     }
-    
-   
 }
+
 
 @mixin resto-card-hp-new{
     display: flex;

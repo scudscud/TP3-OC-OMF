@@ -40,6 +40,7 @@
     }
     
 }
+
 .button-nav{
     @include mobile-layout;
     margin-top: 30px;
@@ -53,7 +54,13 @@
     background: linear-gradient($secondary,$primary);
     border-radius: 30px;
     color: white;
-    @include box-shadow;      
+    @include box-shadow; 
+    &:hover{
+     @include hover-ligthen-boxshadow;
+  
+    }
+
+
 }   
 }
 

@@ -36,3 +36,8 @@
     }
 
 }
+
+.footer-contact-deco-none{
+    text-decoration: none;
+    &:visited{color: white;};
+}
