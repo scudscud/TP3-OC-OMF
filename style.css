@@ -302,6 +302,7 @@ template {
 
 .tuto {
   height: 320px;
+  margin-bottom: 50px;
 }
 .tuto .tit-fonc {
   display: flex;
