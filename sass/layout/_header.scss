@@ -1,10 +1,8 @@
 .title-omf{
     @include mobile-layout;
     height: 60px;
-    align-items: center;
-    justify-content: center;
     margin-top: 0;
     margin-bottom: 0;
     font-family: "Shrikhand", cursive;
-    font-size: x-large;
+    font-size: 160%;
 }

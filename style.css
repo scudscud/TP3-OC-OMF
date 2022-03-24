@@ -223,12 +223,10 @@ template {
   justify-content: center;
   align-items: center;
   height: 60px;
-  align-items: center;
-  justify-content: center;
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Shrikhand", cursive;
-  font-size: x-large;
+  font-size: 160%;
 }
 
 .intro {
@@ -309,6 +307,7 @@ template {
   width: 100%;
   height: 50px;
   margin: 0 0 0 20px;
+  width: 100%;
   font-size: 140%;
   font-weight: bolder;
 }
@@ -346,6 +345,33 @@ template {
 }
 .tuto .fonc-p1 .fa-mobile-screen-button, .tuto .fonc-p1 .fa-list, .tuto .fonc-p1 .fa-store, .tuto .fonc-p2 .fa-mobile-screen-button, .tuto .fonc-p2 .fa-list, .tuto .fonc-p2 .fa-store, .tuto .fonc-p3 .fa-mobile-screen-button, .tuto .fonc-p3 .fa-list, .tuto .fonc-p3 .fa-store {
   color: #7e7e7e;
+}
+
+.resto {
+  width: 100%;
+  height: 1225px;
+  background-color: #f6f6f6;
+  padding-top: 55px;
+}
+.resto .tit-resto {
+  margin: 0 0 0 20px;
+  width: 100%;
+  height: 45px;
+}
+
+.card-hp {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  margin: 0 20px 20px 20px;
+  box-shadow: 0px 10px 5px #e5e5e5;
+  border-radius: 10px;
+}
+.card-hp .pic-main {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 * {
