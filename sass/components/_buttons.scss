@@ -23,3 +23,45 @@
     }
  }   
  }
+
+ .button-place-order{
+    @include mobile-layout;
+    .click{
+        display: flex;
+     justify-content: center;
+     align-items: center;
+     text-decoration: none;
+     width: 65%;
+     height: 60px;
+     background: linear-gradient($secondary,$primary);
+     border-radius: 30px;
+     color: white;
+     @include box-shadow; 
+     &:hover{
+      @include hover-ligthen-boxshadow;
+   
+     }
+     
+    .span-button-order{
+        font-size: 110%;
+        text-align: center;
+    }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ }
