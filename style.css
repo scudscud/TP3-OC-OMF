@@ -487,6 +487,40 @@ template {
         width:10%;
     }
 }*/
+/*
+@mixin block-4-card {
+    .card-dish{
+        display:flex;
+        height: 70px;
+        width: 90%;
+        @include box-shadow;
+        @include background-white;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        align-items: center;
+        padding: 15px 20px 15px 15px;
+        justify-content: space-between;
+
+        .dish-text{
+          display: flex;
+          flex-direction: column;
+          width: 90%;
+          height: 100%;
+          justify-content: space-between;
+
+        }
+        .dish-1,.dish2{
+          display: flex;
+          justify-content: space-between;
+        }
+        .price{
+          display: flex;
+          height: 100%;
+          align-items: flex-end;
+        }
+      }
+
+}*/
 .button-nav {
   display: flex;
   flex-direction: column;
@@ -604,7 +638,6 @@ template {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 400px;
   justify-content: space-between;
 }
 
@@ -625,29 +658,30 @@ hr {
 .card-dish {
   display: flex;
   height: 70px;
-  width: 93%;
+  width: 100%;
   box-shadow: 0px 7px 5px #e5e5e5;
   background: #ffffff;
   border-radius: 20px;
   margin-bottom: 15px;
   align-items: center;
-  padding: 15px;
+  /* padding: 15px 20px 15px 15px;*/
   justify-content: space-between;
 }
 .card-dish .dish-text {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  height: 100%;
+  width: 80%;
   justify-content: space-between;
+  padding-left: 15px;
 }
 .card-dish .dish-1, .card-dish .dish2 {
   display: flex;
-  justify-content: space-between;
+  padding-bottom: 5px;
 }
 .card-dish .price {
   display: flex;
-  height: 100%;
+  height: 55%;
+  padding-right: 15px;
   align-items: flex-end;
 }
 
