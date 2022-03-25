@@ -55,6 +55,7 @@
     @include box-shadow;
     padding-right:20% ;
     justify-content: left;
+    font-weight: bold;
     &:hover { 
         background: #f5edff;
     }
@@ -72,18 +73,21 @@
         color:#ffff ;
         
     }
-   .fa-list,.fa-store,.i{
+   .fa-list,.fa-store,.i-i{
+       display: flex;
        justify-content: center;
        align-items: center;
+       width: 20px;
         padding-left: 15%;
         padding-right: 8%;
         color: #7e7e7e;
             
     }
-    .i{
-        padding-right: 10%;
+    .i-i{
+        height: 50px;
     }
-   
+    
+
 }
 
 
