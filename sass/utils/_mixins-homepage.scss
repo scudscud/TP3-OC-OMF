@@ -37,11 +37,12 @@
     background: #ffffff;
 }
 
+
 @mixin hover-ligthen-boxshadow{
- opacity: 0.8;
- box-shadow: 0 7px 5px darken($color:  #e5e5e5, $amount: 20)
-    
+  filter: brightness(1.2);
+  box-shadow: 0 7px 5px darken($color:  #e5e5e5, $amount: 20)
 }
+
 
 @mixin tuto-card{
     display: flex;
@@ -149,12 +150,13 @@
         @include background-white;
         
     }
-    .fa-regular.fa-heart::before{
-        width: 25px;
+    
+    .i::before{ width: 20px;
         height: 25px;
         
+
     }
-    
+
 }
 
 @mixin resto-card-hp-new-hidden{
