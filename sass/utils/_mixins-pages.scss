@@ -1,0 +1,13 @@
+@mixin title-omf-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@mixin for-items {
+ display :grid;
+ grid-template-columns: 1fr;
+ grid-row: 30px 1fr 1fr 1fr 1fr;
+ grid-gap: 10px;
+}

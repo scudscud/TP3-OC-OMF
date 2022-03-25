@@ -1,6 +1,12 @@
-.intro{
+.size-body-homepage{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     
-    margin-bottom: 100px;
+}
+.intro{
+    height: 285px;
+    @include background-grey;
 }
 
 
@@ -25,8 +31,8 @@
     height: 160px;
 
     .tit-reser{
-        height: 100px;
-        margin-top: 45px;
+        height: 80px;
+        margin-top: 30px;
         margin-bottom: 0;
         font-size: 145%;
         font-weight: bold;
@@ -45,16 +51,21 @@
 
 
 .tuto{
-    height: 320px;
+    display: flex;
+    flex-direction: column;
+    height: 440px;
     margin-bottom: 50px;
-    @include margin-hp;
+    padding: 0 20px 0 20px;
  
     .tit-fonc{
         display: flex;
         width: 100%;
         height: 50px;
         font-size: 140%;
-        font-weight: bolder;   
+        font-weight: bolder; 
+        padding-top: 50px;
+        padding-bottom: 35px;
+        margin: 0
     }
     .fonc-p1, .fonc-p2, .fonc-p3{
         @include mobile-layout;
@@ -64,7 +75,7 @@
 }
 
 .resto{
-    background-color:#f6f6f6 ;
+    @include background-grey;
     padding:55px 20px 65px 20px;
     
     .tit-resto{
