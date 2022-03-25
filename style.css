@@ -622,7 +622,7 @@ template {
 
 .title-page {
   font-size: 120%;
-  padding: 36px 0 0 0;
+  padding: 36px 0 0 15px;
 }
 
 .name-rest {
@@ -643,7 +643,7 @@ template {
 
 }*/
 .title-meal {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   margin-top: 40px;
 }
 
