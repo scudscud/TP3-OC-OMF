@@ -33,7 +33,7 @@
 
 .title-page{
   font-size: 120%;
-  padding: 36px 0 42px 0 ;
+  padding: 36px 0 0 0 ;
 
 }
 .name-rest{
@@ -43,16 +43,17 @@
   width: 50px;
   height: 50px;
 }
-
+/*
 .starter{
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
  
-}
+}*/
 .title-meal{
- margin-top: 0;
+ margin-bottom: 25px;
+ margin-top: 40px;
 }
 hr{
   text-align: left;
@@ -87,6 +88,7 @@ hr{
     .dish-1,.dish2{
       display: flex;
       padding-bottom: 5px;
+      margin:0;
 
     }
     .price{

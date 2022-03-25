@@ -622,7 +622,7 @@ template {
 
 .title-page {
   font-size: 120%;
-  padding: 36px 0 42px 0;
+  padding: 36px 0 0 0;
 }
 
 .name-rest {
@@ -634,15 +634,17 @@ template {
   height: 50px;
 }
 
-.starter {
+/*
+.starter{
   display: flex;
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
-}
 
+}*/
 .title-meal {
-  margin-top: 0;
+  margin-bottom: 25px;
+  margin-top: 40px;
 }
 
 hr {
@@ -677,6 +679,7 @@ hr {
 .card-dish .dish-1, .card-dish .dish2 {
   display: flex;
   padding-bottom: 5px;
+  margin: 0;
 }
 .card-dish .price {
   display: flex;
