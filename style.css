@@ -323,11 +323,11 @@ template {
   justify-content: center;
   align-items: center;
   padding-left: 15%;
-  padding-right: 10%;
+  padding-right: 8%;
   color: #7e7e7e;
 }
 .tuto .fonc-p1 .i, .tuto .fonc-p2 .i, .tuto .fonc-p3 .i {
-  padding-right: 12%;
+  padding-right: 10%;
 }
 
 .resto {
@@ -550,7 +550,7 @@ template {
   text-align: center;
 }
 
-.title-omf {
+.title-omf-hp {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -560,6 +560,29 @@ template {
   font-family: "Shrikhand", cursive;
   font-size: 180%;
   background: #ffffff;
+}
+
+.title-omf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 65px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 90px;
+  font-family: "Shrikhand", cursive;
+  font-size: 180%;
+  background: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 35%;
+}
+.title-omf .i, .title-omf .a {
+  display: flex;
+  padding-left: 12%;
+  text-decoration: none;
+  color: black;
 }
 
 .footer {

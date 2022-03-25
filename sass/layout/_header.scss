@@ -1,4 +1,4 @@
-.title-omf{
+.title-omf-hp{
     @include title-omf;
     height: 65px;
     margin-top: 0;
@@ -6,4 +6,28 @@
     font-family: "Shrikhand", cursive;
     font-size: 180%;
     @include background-white;
+}
+
+.title-omf{
+    @include title-omf;
+    display: flex;
+    height: 65px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 90px;
+    font-family: "Shrikhand", cursive;
+    font-size: 180%;
+    @include background-white;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 35%;
+    .i,.a{
+        display: flex;
+        padding-left: 12%;
+        text-decoration: none;
+        color: black;
+        
+        
+    }
+    
 }
