@@ -1,0 +1,84 @@
+.intro{
+    
+    margin-bottom: 100px;
+}
+
+
+
+.research-loc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background:#eaeaea ;
+
+    &__fa-solid fa-location-dot{
+       
+        background: red;
+       
+    }    
+}
+
+.reservation{
+    @include mobile-layout;
+    height: 160px;
+
+    .tit-reser{
+        height: 100px;
+        margin-top: 45px;
+        margin-bottom: 0;
+        font-size: 145%;
+        font-weight: bold;
+        text-align: center;
+       
+    }
+    p{
+        @include mobile-layout;
+        text-align: center;
+        margin:  0;
+       
+    }
+    
+}
+
+
+
+.tuto{
+    height: 320px;
+    margin-bottom: 50px;
+    @include margin-hp;
+ 
+    .tit-fonc{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        font-size: 140%;
+        font-weight: bolder;   
+    }
+    .fonc-p1, .fonc-p2, .fonc-p3{
+        @include mobile-layout;
+        @include tuto-card;
+        
+    }
+}
+
+.resto{
+    background-color:#f6f6f6 ;
+    padding:55px 20px 65px 20px;
+    
+    .tit-resto{
+        width: 100%;
+        height: 30px;
+        margin-bottom: 0;
+    }
+ 
+}
+
+.card-hp-3, .card-hp-4{
+    @include resto-card-hp-new-hidden;   
+}
+
+.card-hp-1, .card-hp-2{
+    @include resto-card-hp-new;
+}

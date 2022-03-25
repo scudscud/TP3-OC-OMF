@@ -17,6 +17,7 @@
 }
 
 
+
 @mixin margin-hp {
     margin-left: 20px;
     margin-right: 20px;
@@ -42,7 +43,7 @@
     border-radius: 20px;
     box-shadow: 0px 7px 5px #e5e5e5;  
     justify-content: space-between;
-    padding-right:70px ;
+    padding-right:30% ;
     &:hover { 
         background: #f5edff;
     }
@@ -59,10 +60,21 @@
         align-items: center;
         background: $primary;
         color:#ffff ;
+        
     }
     .fa-mobile-screen-button,.fa-list,.fa-store {
         color: #7e7e7e;
+        padding-left:15px;
     }
+    .span-tuto-card{
+        padding-left: 15px;
+    }
+
+
+
+
+
+
 }
 
 
