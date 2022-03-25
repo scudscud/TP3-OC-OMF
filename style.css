@@ -319,7 +319,7 @@ template {
   background: #9356dc;
   color: #ffff;
 }
-.tuto .fonc-p1 .fa-mobile-screen-button, .tuto .fonc-p1 .fa-list, .tuto .fonc-p1 .fa-store, .tuto .fonc-p2 .fa-mobile-screen-button, .tuto .fonc-p2 .fa-list, .tuto .fonc-p2 .fa-store, .tuto .fonc-p3 .fa-mobile-screen-button, .tuto .fonc-p3 .fa-list, .tuto .fonc-p3 .fa-store {
+.tuto .fonc-p1 .fa-mobile-alt, .tuto .fonc-p1 .fa-list, .tuto .fonc-p1 .fa-store, .tuto .fonc-p2 .fa-mobile-alt, .tuto .fonc-p2 .fa-list, .tuto .fonc-p2 .fa-store, .tuto .fonc-p3 .fa-mobile-alt, .tuto .fonc-p3 .fa-list, .tuto .fonc-p3 .fa-store {
   color: #7e7e7e;
   padding-left: 15%;
 }
@@ -564,11 +564,6 @@ template {
   background: #353535;
   padding: 25px;
   color: #ffffff;
-  /*
-  .fa-utensils::before{
-      height: 5px;
-      width: 5px;
-  }*/
 }
 .footer .li-footer {
   margin: 0;
@@ -585,10 +580,9 @@ template {
 .footer .fa-utensils {
   padding-right: 15px;
 }
-.footer .fa-handshake-angle {
-  padding-right: 15px;
-  width: 15px;
-  height: 15px;
+.footer .fa-handshake {
+  padding-right: 10px;
+  rotate: -20deg;
 }
 
 .footer-contact-deco-none {
