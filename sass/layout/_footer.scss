@@ -1,12 +1,17 @@
 .footer{
-    height: 200px;
+    display: flex;
+    width: 92%;
     padding-right: 15px;
+    padding-top: 20px;
     background:#353535 ;
     padding: 25px;
     color:#ffffff ;
-    
-    
+    overflow: hidden;
 
+    
+    
+    
+    
     .li-footer{ 
         margin: 0;
         padding: 0;
@@ -21,8 +26,6 @@
     }
 
     .fa-utensils{
-        
-       
         padding-right: 15px;
     }
     

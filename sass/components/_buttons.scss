@@ -27,6 +27,7 @@
 
  .button-place-order{
     @include mobile-layout;
+    height: 100%;
     .click{
         display: flex;
      justify-content: center;
@@ -40,6 +41,8 @@
      @include box-shadow; 
      &:hover{
       @include hover-ligthen-boxshadow;
+      
+      
    
      }
      
