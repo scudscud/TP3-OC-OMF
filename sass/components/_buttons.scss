@@ -32,6 +32,7 @@
  .button-place-order{
     @include mobile-layout;
     height: 100%;
+    
     .click{
         display: flex;
      justify-content: center;
@@ -46,8 +47,6 @@
      &:hover{
       @include hover-ligthen-boxshadow;
       
-      
-   
      }
      
     .span-button-order{
@@ -56,9 +55,9 @@
     }
 
     }
+   
 
-
-
+   
 
 
 
