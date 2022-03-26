@@ -133,45 +133,32 @@
     }
 
     .description{
-        display: grid;
-        grid-template-columns: 80% 20%;
-        padding-left: 15px;
+        display: flex;
+       height: 80px;
+       justify-content: space-between;
+       padding-left: 15px;
         @include background-white;
+        border-radius: 20px;
     }
     .name-rest-hp{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        width: 90%;
         margin-top: 15px;
-        margin-bottom: 0;
-        
+        margin-bottom: 0;     
         
     }
     .localisation{
+        display: flex;
         padding-top: 7px;
         margin-bottom: 15px;
     }
     .i{
-        width: 25px;
-        height: 40px;
-        padding-top: 25px;
-        padding-left: 10px; 
-         
-    }
-    
-    .fa-heart::before{
         display: flex;
-        width: 50px;
-        height: 50px;
-        background: red;
-
+        height: 100%;
+        padding-top: 30px;
         
     }
-
-
-
-
-
     
 }
 
@@ -179,10 +166,10 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 250px;
+    height: auto;
     margin-top: 20px;
     @include box-shadow;
-    border-radius: 10px;
+    border-radius: 20px;
     text-decoration: none;
     &:visited{color: black;};
 
@@ -194,17 +181,8 @@
         justify-content: right;
     }
     .new-menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        margin-top: 10px;
-        margin-right: 10px;
-        width: 80px;
-        height: 30px;
-        border-radius: 5px;
-        color: #008766;
-        background-color:$tertiary;  
+        width: 0;
+        height: 0;
         visibility: hidden;
     }
     .pic-main{
@@ -215,37 +193,44 @@
 
     }
     
-    
     .description{
-        display: grid;
-        grid-template-columns: 80% 20%;
-        padding-left: 15px;
+       display: flex;
+       height: 80px;
+       justify-content: space-between;
+       padding-left: 15px;
+        @include background-white;
+        border-radius: 20px;
+
     }
+    
+    
     .name-rest-hp{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        width: 90%;
         margin-top: 15px;
-        margin-bottom: 0;
-        
-        
+        margin-bottom: 0;     
     }
+
     .localisation{
+        display: flex;
         padding-top: 7px;
         margin-bottom: 15px;
     }
-    .fa-solid{
-        width: 25px;
-        height: 25px;
-        padding-top: 25px;
-        padding-left: 10px;
-        @include background-white;
-        
-    }
-    .fa-regular.fa-heart::before{
-        width: 25px;
-        height: 25px;
-        
-    }
     
+    .i{
+        display: flex;
+        height: 100%;
+        padding-top: 30px;
+
+        
+    }
+
+
+
+
+
+
+
+
 }

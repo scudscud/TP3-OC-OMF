@@ -353,10 +353,10 @@ template {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 250px;
+  height: auto;
   margin-top: 20px;
   box-shadow: 0px 7px 5px #e5e5e5;
-  border-radius: 10px;
+  border-radius: 20px;
   text-decoration: none;
 }
 .card-hp-3:visited, .card-hp-4:visited {
@@ -370,17 +370,8 @@ template {
   justify-content: right;
 }
 .card-hp-3 .new-menu, .card-hp-4 .new-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  margin-top: 10px;
-  margin-right: 10px;
-  width: 80px;
-  height: 30px;
-  border-radius: 5px;
-  color: #008766;
-  background-color: #99e2d0;
+  width: 0;
+  height: 0;
   visibility: hidden;
 }
 .card-hp-3 .pic-main, .card-hp-4 .pic-main {
@@ -390,31 +381,29 @@ template {
   border-radius: 10px 10px 0 0;
 }
 .card-hp-3 .description, .card-hp-4 .description {
-  display: grid;
-  grid-template-columns: 80% 20%;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
   padding-left: 15px;
+  background: #ffffff;
+  border-radius: 20px;
 }
 .card-hp-3 .name-rest-hp, .card-hp-4 .name-rest-hp {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 90%;
   margin-top: 15px;
   margin-bottom: 0;
 }
 .card-hp-3 .localisation, .card-hp-4 .localisation {
+  display: flex;
   padding-top: 7px;
   margin-bottom: 15px;
 }
-.card-hp-3 .fa-solid, .card-hp-4 .fa-solid {
-  width: 25px;
-  height: 25px;
-  padding-top: 25px;
-  padding-left: 10px;
-  background: #ffffff;
-}
-.card-hp-3 .fa-regular.fa-heart::before, .card-hp-4 .fa-regular.fa-heart::before {
-  width: 25px;
-  height: 25px;
+.card-hp-3 .i, .card-hp-4 .i {
+  display: flex;
+  height: 100%;
+  padding-top: 30px;
 }
 
 .card-hp-1, .card-hp-2 {
@@ -457,33 +446,29 @@ template {
   background-color: #99e2d0;
 }
 .card-hp-1 .description, .card-hp-2 .description {
-  display: grid;
-  grid-template-columns: 80% 20%;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
   padding-left: 15px;
   background: #ffffff;
+  border-radius: 20px;
 }
 .card-hp-1 .name-rest-hp, .card-hp-2 .name-rest-hp {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  width: 90%;
   margin-top: 15px;
   margin-bottom: 0;
 }
 .card-hp-1 .localisation, .card-hp-2 .localisation {
+  display: flex;
   padding-top: 7px;
   margin-bottom: 15px;
 }
 .card-hp-1 .i, .card-hp-2 .i {
-  width: 25px;
-  height: 40px;
-  padding-top: 25px;
-  padding-left: 10px;
-}
-.card-hp-1 .fa-heart::before, .card-hp-2 .fa-heart::before {
   display: flex;
-  width: 50px;
-  height: 50px;
-  background: red;
+  height: 100%;
+  padding-top: 30px;
 }
 
 @media only screen and (min-width: 500px) {
