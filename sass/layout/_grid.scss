@@ -1,14 +1,98 @@
-/*@media only screen and (min-width: 645px){
+@media only screen and (min-width: 630px){
+    .intro{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 250px;
+     padding-bottom: 30px;
+    }
+    .button-nav{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+         margin-top: 15px;
+         width: 500px;
+         justify-content: center;
+         .button-explore-home{
+         justify-content: center;
+         align-items: center;
+         text-decoration: none;
+         height: 60px;
+         background: linear-gradient($secondary,$primary);
+         border-radius: 30px;
+         color: white;
+         @include box-shadow; 
+         &:hover{
+          @include hover-ligthen-boxshadow;
+         }
+         
+        .span-button-home{
+            font-size: 110%;
+            text-align: center;
+        }
+     }   
+     }
+    
     .tuto{
-        background: red; 
-        flex-direction: row; 
+        flex-direction: row;
         flex-wrap: wrap;
+        height: 350px;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .tit-fonc{
+            padding-bottom: 15px;
+        }
+
+        .fonc-p1, .fonc-p2,.fonc-p3{
+            position: relative;
+            justify-content: left;
+            padding-right: 10px;
+            padding-left: 0;
+            width: 45%;
+               
+        }
+        
+        .fa-list,.fa-store,.i{
+           position: relative;
+           left: 15px;
+                 
+         }
+
     }
-    .tit-fonc{
-        width: 100%;
+    .resto{
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-    .fonc-p1{
-        background: purple;
-        width:10%;
+    .tit-resto{
+        padding-bottom: 25px;
+        margin-top: 0;
     }
-}*/
+
+    .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{
+        width: 48%;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

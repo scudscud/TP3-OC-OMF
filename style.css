@@ -322,7 +322,7 @@ template {
   background: #9356dc;
   color: #ffff;
 }
-.tuto .fonc-p1 .fa-list, .tuto .fonc-p1 .fa-store, .tuto .fonc-p1 .i-i, .tuto .fonc-p2 .fa-list, .tuto .fonc-p2 .fa-store, .tuto .fonc-p2 .i-i, .tuto .fonc-p3 .fa-list, .tuto .fonc-p3 .fa-store, .tuto .fonc-p3 .i-i {
+.tuto .fonc-p1 .fa-list, .tuto .fonc-p1 .fa-store, .tuto .fonc-p1 .i, .tuto .fonc-p2 .fa-list, .tuto .fonc-p2 .fa-store, .tuto .fonc-p2 .i, .tuto .fonc-p3 .fa-list, .tuto .fonc-p3 .fa-store, .tuto .fonc-p3 .i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -484,20 +484,82 @@ template {
   background: red;
 }
 
-/*@media only screen and (min-width: 645px){
-    .tuto{
-        background: red; 
-        flex-direction: row; 
-        flex-wrap: wrap;
-    }
-    .tit-fonc{
-        width: 100%;
-    }
-    .fonc-p1{
-        background: purple;
-        width:10%;
-    }
-}*/
+@media only screen and (min-width: 630px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    padding-bottom: 30px;
+  }
+
+  .button-nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-top: 15px;
+    width: 500px;
+    justify-content: center;
+  }
+  .button-nav .button-explore-home {
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 60px;
+    background: linear-gradient(#ff79da, #9356dc);
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0px 7px 5px #e5e5e5;
+  }
+  .button-nav .button-explore-home:hover {
+    filter: brightness(1.2);
+    box-shadow: 0 7px 5px #b2b2b2;
+  }
+  .button-nav .button-explore-home .span-button-home {
+    font-size: 110%;
+    text-align: center;
+  }
+
+  .tuto {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 350px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .tuto .tit-fonc {
+    padding-bottom: 15px;
+  }
+  .tuto .fonc-p1, .tuto .fonc-p2, .tuto .fonc-p3 {
+    position: relative;
+    justify-content: left;
+    padding-right: 10px;
+    padding-left: 0;
+    width: 45%;
+  }
+  .tuto .fa-list, .tuto .fa-store, .tuto .i {
+    position: relative;
+    left: 15px;
+  }
+
+  .resto {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tit-resto {
+    padding-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .card-hp-1, .card-hp-2, .card-hp-3, .card-hp-4 {
+    width: 48%;
+  }
+}
 .button-nav {
   display: flex;
   flex-direction: column;
