@@ -1,4 +1,5 @@
 .button-nav{
+    
     @include mobile-layout;
      margin-top: 15px;
      .button-explore-home{
@@ -12,18 +13,26 @@
      border-radius: 30px;
      color: white;
      @include box-shadow; 
+     
      &:hover{
       @include hover-ligthen-boxshadow;
-      
-   
+     
      }
+
+    
      
     .span-button-home{
         font-size: 110%;
         text-align: center;
     }
+
+
  }   
  }
+
+ 
+     
+ 
 
  .button-place-order{
     @include mobile-layout;

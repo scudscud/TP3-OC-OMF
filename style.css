@@ -485,6 +485,44 @@ template {
   background: red;
 }
 
+@media only screen and (min-width: 500px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    padding-bottom: 30px;
+  }
+
+  .button-nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-top: 15px;
+    width: 500px;
+    justify-content: center;
+  }
+  .button-nav .button-explore-home {
+    width: 320px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 60px;
+    background: linear-gradient(#ff79da, #9356dc);
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0px 7px 5px #e5e5e5;
+  }
+  .button-nav .button-explore-home:hover {
+    filter: brightness(1.2);
+    box-shadow: 10px 7px 7px #999999;
+  }
+  .button-nav .button-explore-home .span-button-home {
+    font-size: 110%;
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 630px) {
   .intro {
     display: flex;
@@ -515,7 +553,7 @@ template {
   }
   .button-nav .button-explore-home:hover {
     filter: brightness(1.2);
-    box-shadow: 0 7px 5px #b2b2b2;
+    box-shadow: 10px 7px 7px #999999;
   }
   .button-nav .button-explore-home .span-button-home {
     font-size: 110%;
@@ -629,7 +667,7 @@ template {
 }
 .button-nav .button-explore-home:hover {
   filter: brightness(1.2);
-  box-shadow: 0 7px 5px #b2b2b2;
+  box-shadow: 10px 7px 7px #999999;
 }
 .button-nav .button-explore-home .span-button-home {
   font-size: 110%;
@@ -659,7 +697,7 @@ template {
 }
 .button-place-order .click:hover {
   filter: brightness(1.2);
-  box-shadow: 0 7px 5px #b2b2b2;
+  box-shadow: 10px 7px 7px #999999;
 }
 .button-place-order .click .span-button-order {
   font-size: 110%;
