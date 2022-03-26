@@ -504,10 +504,6 @@ template {
     filter: brightness(1.2);
     box-shadow: 10px 7px 7px #999999;
   }
-  .button-nav .button-explore-home .span-button-home {
-    font-size: 110%;
-    text-align: center;
-  }
 }
 @media only screen and (min-width: 630px) {
   .intro {
@@ -605,6 +601,8 @@ template {
 
   .resto {
     padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -624,12 +622,58 @@ template {
     width: 48%;
     height: 350px;
     margin-bottom: 35px;
+    box-shadow: 20px 30px 7px #e5e5e5;
   }
   .card-hp-1 .pic-main, .card-hp-2 .pic-main, .card-hp-3 .pic-main, .card-hp-4 .pic-main {
     height: 100%;
   }
   .card-hp-1 .sticker-new, .card-hp-2 .sticker-new, .card-hp-3 .sticker-new, .card-hp-4 .sticker-new {
     height: 290px;
+  }
+  .card-hp-1 .sticker-new .new-menu, .card-hp-2 .sticker-new .new-menu, .card-hp-3 .sticker-new .new-menu, .card-hp-4 .sticker-new .new-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    color: #008766;
+    background-color: #99e2d0;
+  }
+}
+@media only screen and (min-width: 1000px) and (min-width: 1600px) {
+  .resto {
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tit-resto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .card-hp-1, .card-hp-2, .card-hp-3, .card-hp-4 {
+    display: flex;
+    width: 24%;
+    height: 350px;
+    margin-bottom: 35px;
+  }
+  .card-hp-1 .pic-main, .card-hp-2 .pic-main, .card-hp-3 .pic-main, .card-hp-4 .pic-main {
+    height: 100%;
+  }
+  .card-hp-1 .sticker-new, .card-hp-2 .sticker-new, .card-hp-3 .sticker-new, .card-hp-4 .sticker-new {
+    height: 250px;
   }
   .card-hp-1 .sticker-new .new-menu, .card-hp-2 .sticker-new .new-menu, .card-hp-3 .sticker-new .new-menu, .card-hp-4 .sticker-new .new-menu {
     display: flex;
@@ -726,13 +770,12 @@ template {
   height: 65px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-right: 90px;
   font-family: "Shrikhand", cursive;
   font-size: 180%;
   background: #ffffff;
   align-items: center;
   justify-content: space-between;
-  padding-right: 35%;
+  padding-right: 40%;
 }
 .title-omf .i, .title-omf .a {
   display: flex;
