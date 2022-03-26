@@ -328,7 +328,7 @@ template {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
+  width: 30px;
   padding-left: 15%;
   padding-right: 8%;
   color: #7e7e7e;
@@ -421,7 +421,7 @@ template {
 }
 .card-hp-1 .pic-main, .card-hp-2 .pic-main {
   width: 100%;
-  height: 170px;
+  height: 100%;
   object-fit: cover;
   border-radius: 10px 10px 0 0;
 }
@@ -447,7 +447,7 @@ template {
 }
 .card-hp-1 .description, .card-hp-2 .description {
   display: flex;
-  height: 80px;
+  height: 30%;
   justify-content: space-between;
   padding-left: 15px;
   background: #ffffff;
@@ -557,15 +557,9 @@ template {
     padding-bottom: 15px;
   }
   .tuto .fonc-p1, .tuto .fonc-p2, .tuto .fonc-p3 {
-    position: relative;
     justify-content: left;
     padding-right: 10px;
-    padding-left: 0;
     width: 45%;
-  }
-  .tuto .fa-list, .tuto .fa-store, .tuto .i {
-    position: relative;
-    left: 15px;
   }
 
   .resto {
@@ -583,6 +577,7 @@ template {
 
   .card-hp-1, .card-hp-2, .card-hp-3, .card-hp-4 {
     width: 48%;
+    height: 250px;
   }
 }
 @media only screen and (min-width: 1000px) {
@@ -627,7 +622,14 @@ template {
   .card-hp-1, .card-hp-2, .card-hp-3, .card-hp-4 {
     display: flex;
     width: 48%;
-    height: 300px;
+    height: 350px;
+    margin-bottom: 35px;
+  }
+  .card-hp-1 .pic-main, .card-hp-2 .pic-main, .card-hp-3 .pic-main, .card-hp-4 .pic-main {
+    height: 100%;
+  }
+  .card-hp-1 .sticker-new, .card-hp-2 .sticker-new, .card-hp-3 .sticker-new, .card-hp-4 .sticker-new {
+    height: 290px;
   }
 }
 .button-nav {

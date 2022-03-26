@@ -85,19 +85,14 @@
         }
 
         .fonc-p1, .fonc-p2,.fonc-p3{
-            position: relative;
             justify-content: left;
             padding-right: 10px;
-            padding-left: 0;
+            
             width: 45%;
                
         }
         
-        .fa-list,.fa-store,.i{
-           position: relative;
-           left: 15px;
-                 
-         }
+       
 
     }
     .resto{
@@ -113,7 +108,8 @@
     }
 
     .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{ 
-        width: 48%;    
+        width: 48%;   
+        height: 250px; 
     }
 }
 
@@ -165,9 +161,23 @@
     .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{
         display: flex;
         width: 48%;
-        height: 300px;
+        height: 350px;
+        margin-bottom: 35px;
+
+        .pic-main{
+            height: 100%;
+            
+        }
+
+        .sticker-new{
+            height: 290px;
+            
+
+        }
         
-       
+        
+        
+      
     }
 
 
