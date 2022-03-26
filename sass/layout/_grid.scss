@@ -171,7 +171,20 @@
 
         .sticker-new{
             height: 290px;
-            
+            .new-menu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                margin-top: 20px;
+                margin-right: 20px;
+                width: 120px;
+                height: 50px;
+                border-radius: 5px;
+                color: #008766;
+                background-color:$tertiary;  
+                
+            }
 
         }
         
