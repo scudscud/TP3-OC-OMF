@@ -73,11 +73,63 @@
         margin-top: 0;
     }
 
-    .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{
-        width: 48%;
+    .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{ 
+        width: 48%;    
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+
+    .tuto{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 250px;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .tit-fonc{
+            justify-content: center;
+            padding-bottom: 15px;
+        }
+
+        .fonc-p1, .fonc-p2,.fonc-p3{
+            margin: 0;
+            padding-right: 10px;
+            padding-left: 15px;
+            width: 30%;
+               
+        }
+        
+        .number-fonc-tuto{
+            position: absolute;
+            right: 0px;
+        }
+
     }
 
-    
+    .resto{
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tit-resto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+        margin-top: 0;
+    }
+
+    .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{
+        display: flex;
+        width: 48%;
+        height: 300px;
+        
+       
+    }
 
 
 

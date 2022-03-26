@@ -560,6 +560,51 @@ template {
     width: 48%;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .tuto {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 250px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .tuto .tit-fonc {
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+  .tuto .fonc-p1, .tuto .fonc-p2, .tuto .fonc-p3 {
+    margin: 0;
+    padding-right: 10px;
+    padding-left: 15px;
+    width: 30%;
+  }
+  .tuto .number-fonc-tuto {
+    position: absolute;
+    right: 0px;
+  }
+
+  .resto {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tit-resto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    margin-top: 0;
+  }
+
+  .card-hp-1, .card-hp-2, .card-hp-3, .card-hp-4 {
+    display: flex;
+    width: 48%;
+    height: 300px;
+  }
+}
 .button-nav {
   display: flex;
   flex-direction: column;
