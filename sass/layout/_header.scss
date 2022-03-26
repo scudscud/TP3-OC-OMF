@@ -9,6 +9,7 @@
 }
 
 .title-omf{
+    position: relative;
     @include title-omf;
     display: flex;
     height: 65px;
