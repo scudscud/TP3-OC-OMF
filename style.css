@@ -636,9 +636,9 @@ template {
 
 .top-pic-page {
   width: 100%;
-  height: 280px;
+  height: 255px;
+  justify-content: center;
   object-fit: cover;
-  z-index: -1;
   position: absolute;
 }
 
@@ -647,8 +647,9 @@ template {
   flex-direction: column;
   background: #f5f5f5;
   border-radius: 50px 50px 0 0;
-  margin-top: 240px;
   padding: 0 15px 0 15px;
+  position: relative;
+  margin-top: 220px;
 }
 
 .title-page {
