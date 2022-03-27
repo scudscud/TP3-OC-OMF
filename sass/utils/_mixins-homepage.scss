@@ -25,9 +25,19 @@
 }
 
 @mixin box-shadow {
-    box-shadow: 0px 7px 5px #e5e5e5; 
+    box-shadow: -10px 10px 2px #e5e5e5; 
     
 }
+
+@mixin box-shadow-desktop {
+    box-shadow : (-10px 30px 10px #dbd9d9);    
+}
+
+@mixin hover-ligthen-boxshadow{
+    filter: brightness(1.2);
+    box-shadow: 10px 7px 7px darken($color:  #e5e5e5, $amount: 30)
+  }
+  
 @mixin background-grey {
     background-color:#f6f6f6 ;
 }
@@ -74,7 +84,7 @@
         color:#ffff ;
         
     }
-   .fa-list,.fa-store,.i{
+   .fa-list,.fa-store, .fa-mobile-alt{
        display: flex;
        justify-content: center;
        align-items: center;
@@ -84,10 +94,7 @@
         color: #7e7e7e;
             
     }
-    .i-i{
-        height: 50px;
-    }
-    
+   
 
 }
 
@@ -143,7 +150,7 @@
     .name-rest-hp{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 85%;
         margin-top: 15px;
         margin-bottom: 0;     
         
@@ -156,10 +163,11 @@
     .i{
         display: flex;
         height: 100%;
-        padding-top: 30px;
-        
+        width: 15%;
+        background: red;
+
     }
-    
+   
 }
 
 @mixin resto-card-hp-new-hidden{
@@ -207,7 +215,7 @@
     .name-rest-hp{
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 85%;
         margin-top: 15px;
         margin-bottom: 0;     
     }
@@ -218,14 +226,14 @@
         margin-bottom: 15px;
     }
     
+
     .i{
         display: flex;
         height: 100%;
-        padding-top: 30px;
-
-        
+        width: 15%;
+        background: red;
     }
-
+    
 
 
 

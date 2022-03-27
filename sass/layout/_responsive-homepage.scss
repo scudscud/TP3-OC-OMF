@@ -109,7 +109,9 @@
         height: 250px; 
     }
 }
-
+ 
+  
+ 
 
 @media only screen and (min-width: 1000px){
 
@@ -162,8 +164,7 @@
         width: 48%;
         height: 350px;
         margin-bottom: 35px;
-        box-shadow: 20px 30px 7px #e5e5e5;
-        
+        @include box-shadow-desktop;
 
         .pic-main{
             height: 100%;

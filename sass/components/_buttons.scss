@@ -1,3 +1,19 @@
+@mixin button-bkg-linear {
+   background:  linear-gradient($secondary,$primary);
+
+}
+@mixin button-box-shadow {
+    box-shadow: 5px 10px 0px #e5e5e5; 
+    
+}
+
+  @mixin button-hover-ligthen-boxshadow{
+    filter: brightness(1.2);
+    box-shadow: 5px 10px 0px darken($color:  #e5e5e5, $amount: 30);
+  }
+
+
+
 .button-nav{
     
     @include mobile-layout;
@@ -9,13 +25,13 @@
      text-decoration: none;
      width: 65%;
      height: 60px;
-     background: linear-gradient($secondary,$primary);
      border-radius: 30px;
      color: white;
-     @include box-shadow; 
+     @include button-bkg-linear;
+     @include button-box-shadow; 
      
      &:hover{
-      @include hover-ligthen-boxshadow;
+      @include button-hover-ligthen-boxshadow;
      
      }
 
@@ -45,7 +61,7 @@
      color: white;
      @include box-shadow; 
      &:hover{
-      @include hover-ligthen-boxshadow;
+      @include button-hover-ligthen-boxshadow;
       
      }
      

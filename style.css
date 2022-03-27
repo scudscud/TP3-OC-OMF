@@ -302,7 +302,7 @@ template {
   margin: 0 0 20px 10px;
   background: #f6f6f6;
   border-radius: 20px;
-  box-shadow: 0px 7px 5px #e5e5e5;
+  box-shadow: -10px 10px 2px #e5e5e5;
   padding-right: 20%;
   justify-content: left;
   font-weight: bold;
@@ -324,7 +324,7 @@ template {
   background: #9356dc;
   color: #ffff;
 }
-.tuto .fonc-p1 .fa-list, .tuto .fonc-p1 .fa-store, .tuto .fonc-p1 .i, .tuto .fonc-p2 .fa-list, .tuto .fonc-p2 .fa-store, .tuto .fonc-p2 .i, .tuto .fonc-p3 .fa-list, .tuto .fonc-p3 .fa-store, .tuto .fonc-p3 .i {
+.tuto .fonc-p1 .fa-list, .tuto .fonc-p1 .fa-store, .tuto .fonc-p1 .fa-mobile-alt, .tuto .fonc-p2 .fa-list, .tuto .fonc-p2 .fa-store, .tuto .fonc-p2 .fa-mobile-alt, .tuto .fonc-p3 .fa-list, .tuto .fonc-p3 .fa-store, .tuto .fonc-p3 .fa-mobile-alt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,9 +332,6 @@ template {
   padding-left: 15%;
   padding-right: 8%;
   color: #7e7e7e;
-}
-.tuto .fonc-p1 .i-i, .tuto .fonc-p2 .i-i, .tuto .fonc-p3 .i-i {
-  height: 50px;
 }
 
 .resto {
@@ -355,7 +352,7 @@ template {
   width: 100%;
   height: auto;
   margin-top: 20px;
-  box-shadow: 0px 7px 5px #e5e5e5;
+  box-shadow: -10px 10px 2px #e5e5e5;
   border-radius: 20px;
   text-decoration: none;
 }
@@ -391,7 +388,7 @@ template {
 .card-hp-3 .name-rest-hp, .card-hp-4 .name-rest-hp {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 85%;
   margin-top: 15px;
   margin-bottom: 0;
 }
@@ -403,7 +400,8 @@ template {
 .card-hp-3 .i, .card-hp-4 .i {
   display: flex;
   height: 100%;
-  padding-top: 30px;
+  width: 15%;
+  background: red;
 }
 
 .card-hp-1, .card-hp-2 {
@@ -412,7 +410,7 @@ template {
   width: 100%;
   height: 250px;
   margin-top: 20px;
-  box-shadow: 0px 7px 5px #e5e5e5;
+  box-shadow: -10px 10px 2px #e5e5e5;
   border-radius: 10px;
   text-decoration: none;
 }
@@ -456,7 +454,7 @@ template {
 .card-hp-1 .name-rest-hp, .card-hp-2 .name-rest-hp {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 85%;
   margin-top: 15px;
   margin-bottom: 0;
 }
@@ -468,7 +466,8 @@ template {
 .card-hp-1 .i, .card-hp-2 .i {
   display: flex;
   height: 100%;
-  padding-top: 30px;
+  width: 15%;
+  background: red;
 }
 
 @media only screen and (min-width: 500px) {
@@ -498,7 +497,7 @@ template {
     background: linear-gradient(#ff79da, #9356dc);
     border-radius: 30px;
     color: white;
-    box-shadow: 0px 7px 5px #e5e5e5;
+    box-shadow: -10px 10px 2px #e5e5e5;
   }
   .button-nav .button-explore-home:hover {
     filter: brightness(1.2);
@@ -531,7 +530,7 @@ template {
     background: linear-gradient(#ff79da, #9356dc);
     border-radius: 30px;
     color: white;
-    box-shadow: 0px 7px 5px #e5e5e5;
+    box-shadow: -10px 10px 2px #e5e5e5;
   }
   .button-nav .button-explore-home:hover {
     filter: brightness(1.2);
@@ -622,7 +621,7 @@ template {
     width: 48%;
     height: 350px;
     margin-bottom: 35px;
-    box-shadow: 20px 30px 7px #e5e5e5;
+    box-shadow: -10px 30px 10px #dbd9d9;
   }
   .card-hp-1 .pic-main, .card-hp-2 .pic-main, .card-hp-3 .pic-main, .card-hp-4 .pic-main {
     height: 100%;
@@ -705,14 +704,14 @@ template {
   text-decoration: none;
   width: 65%;
   height: 60px;
-  background: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px;
   color: white;
-  box-shadow: 0px 7px 5px #e5e5e5;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 5px 10px 0px #e5e5e5;
 }
 .button-nav .button-explore-home:hover {
   filter: brightness(1.2);
-  box-shadow: 10px 7px 7px #999999;
+  box-shadow: 5px 10px 0px #999999;
 }
 .button-nav .button-explore-home .span-button-home {
   font-size: 110%;
@@ -738,11 +737,11 @@ template {
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px;
   color: white;
-  box-shadow: 0px 7px 5px #e5e5e5;
+  box-shadow: -10px 10px 2px #e5e5e5;
 }
 .button-place-order .click:hover {
   filter: brightness(1.2);
-  box-shadow: 10px 7px 7px #999999;
+  box-shadow: 5px 10px 0px #999999;
 }
 .button-place-order .click .span-button-order {
   font-size: 110%;
@@ -806,11 +805,17 @@ template {
   font-size: 130%;
 }
 .footer .fa-utensils {
-  padding-right: 15px;
+  width: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 7px;
+  padding-right: 5px;
 }
 .footer .fa-handshake {
   padding-right: 10px;
-  rotate: -20deg;
+  rotate: -40deg;
+  width: 20px;
+  padding-right: 12px;
 }
 
 .footer-contact-deco-none {
@@ -877,7 +882,7 @@ hr {
   display: flex;
   height: 70px;
   width: 100%;
-  box-shadow: 0px 7px 5px #e5e5e5;
+  box-shadow: -10px 10px 2px #e5e5e5;
   background: #ffffff;
   border-radius: 20px;
   margin-bottom: 15px;
