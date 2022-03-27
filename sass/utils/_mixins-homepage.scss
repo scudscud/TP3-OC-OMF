@@ -1,4 +1,7 @@
 
+
+$background-linear-gradient: linear-gradient($secondary,$primary);
+
 /* MIXINS HOMEPAGE VERSION MOBILE */
 @mixin title-omf {
     display: flex;
@@ -15,8 +18,6 @@
     align-items: center;
 
 }
-
-
 
 @mixin margin-hp {
     margin-left: 20px;
@@ -46,7 +47,7 @@
 @mixin background-white{
     background: #ffffff;
 }
-
+$background-white : #ffff;
 
 @mixin hover-ligthen-boxshadow{
   filter: brightness(1.2);
@@ -69,6 +70,7 @@
     font-weight: bold;
     &:hover { 
         background: #f5edff;
+        cursor: pointer;
     }
 
     .number-fonc-tuto{
@@ -160,14 +162,22 @@
         padding-top: 7px;
         margin-bottom: 15px;
     }
-    .i{
+     .i-card{
         display: flex;
-        height: 100%;
-        width: 15%;
-        background: red;
+        justify-content: center;
+        align-content: center;
+         margin-top: 15px;
+         margin-right: 16px;
+         margin-left: 5px;
+         width: 33px;
+         height: 31px;
 
-    }
-   
+     }
+    
+    
+
+
+
 }
 
 @mixin resto-card-hp-new-hidden{
@@ -226,18 +236,18 @@
         margin-bottom: 15px;
     }
     
-
-    .i{
+    .i-card{
         display: flex;
-        height: 100%;
-        width: 15%;
-        background: red;
-    }
+        justify-content: center;
+        align-content: center;
+         margin-top: 15px;
+         margin-right: 16px;
+         margin-left: 5px;
+         width: 33px;
+         height: 31px;
+
+     }
     
-
-
-
-
 
 
 

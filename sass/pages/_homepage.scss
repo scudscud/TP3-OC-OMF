@@ -20,8 +20,8 @@
     height: 50px;
     background:#eaeaea ;
 
-    &__fa-solid fa-location-dot{
-       
+    & .i-loc{
+        padding-right: 30px;
         background: red;
        
     }    
@@ -92,9 +92,11 @@
 }
 
 .card-hp-3, .card-hp-4{
-    @include resto-card-hp-new-hidden;   
+    @include resto-card-hp-new-hidden;  
+    
 }
 
 .card-hp-1, .card-hp-2{
     @include resto-card-hp-new;
 }
+

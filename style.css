@@ -238,7 +238,8 @@ template {
   height: 50px;
   background: #eaeaea;
 }
-.research-loc__fa-solid fa-location-dot {
+.research-loc .i-loc {
+  padding-right: 30px;
   background: red;
 }
 
@@ -311,6 +312,7 @@ template {
 }
 .tuto .fonc-p1:hover, .tuto .fonc-p2:hover, .tuto .fonc-p3:hover {
   background: #f5edff;
+  cursor: pointer;
 }
 .tuto .fonc-p1 .number-fonc-tuto, .tuto .fonc-p2 .number-fonc-tuto, .tuto .fonc-p3 .number-fonc-tuto {
   display: flex;
@@ -397,11 +399,15 @@ template {
   padding-top: 7px;
   margin-bottom: 15px;
 }
-.card-hp-3 .i, .card-hp-4 .i {
+.card-hp-3 .i-card, .card-hp-4 .i-card {
   display: flex;
-  height: 100%;
-  width: 15%;
-  background: red;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+  margin-right: 16px;
+  margin-left: 5px;
+  width: 33px;
+  height: 31px;
 }
 
 .card-hp-1, .card-hp-2 {
@@ -463,11 +469,15 @@ template {
   padding-top: 7px;
   margin-bottom: 15px;
 }
-.card-hp-1 .i, .card-hp-2 .i {
+.card-hp-1 .i-card, .card-hp-2 .i-card {
   display: flex;
-  height: 100%;
-  width: 15%;
-  background: red;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+  margin-right: 16px;
+  margin-left: 5px;
+  width: 33px;
+  height: 31px;
 }
 
 @media only screen and (min-width: 500px) {
@@ -820,9 +830,55 @@ template {
 
 .footer-contact-deco-none {
   text-decoration: none;
-}
-.footer-contact-deco-none:visited {
   color: white;
+}
+
+.i-card {
+  color: white;
+  -webkit-text-stroke: 2px #000000;
+}
+.i-card:hover {
+  -webkit-text-stroke: 2px rgba(255, 255, 255, 0);
+  background: #9356dc;
+  background: -webkit-repeating-linear-gradient(180deg, #ff79da, #9356dc);
+  background: -moz-repeating-linear-gradient(to top #ff79da 50%, #9356dc 50%);
+  background: repeating-linear-gradient(to top #ff79da 50%, #9356dc 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  animation: heart 2s;
+}
+
+/*
+
+  @keyframes test {
+      from{
+        transform-origin: 50% 100%;
+        transform: scale(0);
+
+      }
+
+   to{
+    transform: scale(1);
+   }
+
+
+  }
+
+
+*/
+@keyframes heart {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 30px;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .body-pages {
@@ -856,11 +912,6 @@ template {
 
 .name-rest {
   margin: 0;
-}
-
-.fa-heart {
-  width: 50px;
-  height: 50px;
 }
 
 .title-meal {
