@@ -5,66 +5,54 @@
     -webkit-text-stroke: 2px #000000;
     &:hover{
         -webkit-text-stroke: 2px rgba(255, 255, 255, 0);
+
+        
     background: $primary;
     background: -webkit-repeating-linear-gradient(180deg,
       
       $secondary ,
       $primary 
     );
-    background: -moz-repeating-linear-gradient( 
+    background: -moz-repeating-linear-gradient( 180deg,
         to top 
       $secondary 50%,
       $primary 50%
     );
-    background: repeating-linear-gradient( 
+    background: repeating-linear-gradient( 180deg,
       to top 
       $secondary 50%,
       $primary 50%
     );
+
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
     cursor: pointer;
-    
-    
-    animation: heart 2s ;
-
-  
+    animation: heart 2s 
     }
-
   }
 
-
 /*
-
   @keyframes test {
       from{
         transform-origin: 50% 100%;
-        transform: scale(0);
-        
+        transform: scale(0);       
       }
 
    to{
     transform: scale(1);
    }
-
-
   }
-
-
 */
 
 @keyframes heart{
-    from{
+    from{ 
+        height: 0px; 
         
-        height: 0px;
-        
-       
-  
+    
     }
   to{
-      
+   
       height: 30px;
   }
 

@@ -48,14 +48,30 @@ a{
 }
 
 .title-page{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
   font-size: 120%;
   padding: 36px 0 0 15px ;
 
 }
 .name-rest{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 50%;
   margin: 0;
 }
 
+.i-card-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+
+}
 
 .title-meal{
  margin-bottom: 30px;
