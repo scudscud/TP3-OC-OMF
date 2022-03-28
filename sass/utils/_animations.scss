@@ -167,22 +167,17 @@
 
   }
 
-
-
-
-
   .i-coche{
+
     visibility: visible;
     display:flex;
     color: white;
     background: $tertiary;
    transform: rotate(-360deg);
-    transition: 0.8s ease-in-out;
-    
+    transition: 0.8s ease-in-out; 
    
   }
   
-   
   }
 }
   

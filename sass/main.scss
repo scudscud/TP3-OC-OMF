@@ -114,11 +114,7 @@ hr{
     justify-content: space-between;
   
     .dish-text{
-      
-      overflow:hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-        display: inline-block;
+     display: inline-block;
       flex-direction: column;
       width: 80%;
       justify-content: space-between;

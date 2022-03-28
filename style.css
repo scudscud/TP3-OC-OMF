@@ -1092,9 +1092,6 @@ hr {
   justify-content: space-between;
 }
 .card-dish .dish-text {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   display: inline-block;
   flex-direction: column;
   width: 80%;
