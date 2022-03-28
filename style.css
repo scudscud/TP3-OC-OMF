@@ -469,16 +469,6 @@ template {
   padding-top: 7px;
   margin-bottom: 15px;
 }
-.card-hp-1 .i-card, .card-hp-2 .i-card {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-top: 15px;
-  margin-right: 16px;
-  margin-left: 5px;
-  width: 33px;
-  height: 31px;
-}
 
 @media only screen and (min-width: 500px) {
   .intro {
@@ -783,12 +773,13 @@ template {
   font-size: 180%;
   background: #ffffff;
   align-items: center;
-  justify-content: space-between;
-  padding-right: 40%;
+  justify-content: space-around;
+  padding-right: 30%;
 }
 .title-omf .i, .title-omf .a {
   display: flex;
-  padding-left: 12%;
+  align-items: center;
+  justify-content: left;
   text-decoration: none;
   color: black;
 }
@@ -834,11 +825,51 @@ template {
 }
 
 .i-card {
+  display: block;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-content: center;
+  margin-top: 15px;
+  margin-right: 16px;
+  margin-left: 5px;
+  width: 33px;
+  height: 31px;
+}
+
+.i-card {
   color: white;
   -webkit-text-stroke: 2px #000000;
 }
 .i-card:hover {
-  -webkit-text-stroke: 2px rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 2px #000000;
+  background: #9356dc;
+  background: -webkit-repeating-linear-gradient(180deg, #ff79da, #9356dc);
+  background: -moz-repeating-linear-gradient(180deg, to top #ff79da 50%, #9356dc 50%);
+  background: repeating-linear-gradient(180deg, to top #ff79da 50%, #9356dc 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heart 2s;
+}
+
+/*
+  @keyframes test {
+      from{
+        transform-origin: 50% 100%;
+        transform: scale(0);       
+      }
+
+   to{
+    transform: scale(1);
+   }
+  }
+*/
+.i-card-p {
+  color: white;
+  -webkit-text-stroke: 2px #000000;
+}
+.i-card-p:hover {
+  -webkit-text-stroke: 2px #000000;
   background: #9356dc;
   background: -webkit-repeating-linear-gradient(180deg, #ff79da, #9356dc);
   background: -moz-repeating-linear-gradient(180deg, to top #ff79da 50%, #9356dc 50%);
@@ -847,7 +878,7 @@ template {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  animation: heart 2s;
+  animation: heart 2s ease-in-out;
 }
 
 /*
@@ -902,17 +933,17 @@ a {
 .title-page {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   height: 50px;
   font-size: 120%;
-  padding: 36px 0 0 15px;
+  padding: 36px 0px 0px 0px;
+  margin-right: 5px;
 }
 
 .name-rest {
   display: flex;
-  flex-wrap: nowrap;
-  width: 50%;
+  justify-content: left;
   margin: 0;
 }
 
@@ -920,7 +951,15 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33px;
+  width: 40px;
+  height: 33px;
+}
+
+.i-card-p::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
   height: 33px;
 }
 

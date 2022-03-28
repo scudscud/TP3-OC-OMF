@@ -50,17 +50,18 @@ a{
 .title-page{
   display: flex;
   flex-direction:row;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   height: 50px;
   font-size: 120%;
-  padding: 36px 0 0 15px ;
+  padding: 36px 0px 0px 0px ;
+  margin-right: 5px;
 
 }
 .name-rest{
   display: flex;
-  flex-wrap: nowrap;
-  width: 50%;
+  justify-content: left;
+
   margin: 0;
 }
 
@@ -68,10 +69,20 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33px;
+  width: 40px;
   height: 33px;
 
 }
+
+.i-card-p::before{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 33px;
+
+}
+
 
 .title-meal{
  margin-bottom: 30px;
