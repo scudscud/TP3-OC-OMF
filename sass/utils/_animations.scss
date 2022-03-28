@@ -97,7 +97,7 @@
 /*---------------------anim baloon--------------*/
  @keyframes test {
       from{
-        transform-origin: 50% 100%;
+        transform-origin: 50% 80%;
         transform: scale(0);       
       }
 
@@ -147,7 +147,7 @@
         height: 55%;
         align-items: flex-end;
         padding-right: 15px;
-        animation: testtranslate1 reverse ease-in-out 0.5s ;
+        animation: coche reverse ease-in-out 0.5s ;
        
       }
 
@@ -162,8 +162,7 @@
     height: 70px;
     
     /*transition: transform 0.2s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out*/
-
-    animation: testtranslate1 reverse ease-in-out 0.5s;
+    animation: coche reverse ease-in-out 0.5s;
 
   }
 
@@ -214,7 +213,8 @@
 
   }
   */
-  @keyframes testtranslate1{
+  /*----------------------Anim coche -------------------------*/
+  @keyframes coche{
     0% {
       transform: translateX(0);
       

@@ -881,7 +881,7 @@ template {
 /*---------------------anim baloon--------------*/
 @keyframes test {
   from {
-    transform-origin: 50% 100%;
+    transform-origin: 50% 80%;
     transform: scale(0);
   }
   to {
@@ -919,7 +919,7 @@ template {
   height: 55%;
   align-items: flex-end;
   padding-right: 15px;
-  animation: testtranslate1 reverse ease-in-out 0.5s;
+  animation: coche reverse ease-in-out 0.5s;
 }
 .card-dish:hover .i-c-g {
   display: flex;
@@ -930,7 +930,7 @@ template {
   width: 70px;
   height: 70px;
   /*transition: transform 0.2s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out*/
-  animation: testtranslate1 reverse ease-in-out 0.5s;
+  animation: coche reverse ease-in-out 0.5s;
 }
 .card-dish:hover .i-coche {
   visibility: visible;
@@ -972,7 +972,8 @@ template {
 
   }
   */
-@keyframes testtranslate1 {
+/*----------------------Anim coche -------------------------*/
+@keyframes coche {
   0% {
     transform: translateX(0);
   }
