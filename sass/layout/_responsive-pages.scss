@@ -35,9 +35,19 @@
             justify-content: space-between;
             width: 100%;
             font-size: 120%;
-            padding: 36px 0 0 15px ;  
+            padding: 36px 0 0 0px ;  
           }
-     
+          .i-card-p{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            width: 40px;
+            height: 33px;
+            padding: 0;
+            
+            
+          
+          }
           .starter, .main-course, .dessert{
               display: flex;
               flex-direction: column;
@@ -61,18 +71,28 @@
         }
 
         .title-page{
-            justify-content: center;
+            justify-content: left;
 
         }
         .name-rest{
-            padding-right: 75px;
+            padding-left:35%;
+
+            
         }
 
         .main{ 
-          margin-top: 420px;  
-         
-         
+          margin-top: 420px;      
     }
+        .i-card-p{
+        margin-left: 15%;
+        
+        
+      
+      }
+
+
+
+
     }
 
     @media screen and (min-width: 1200px) {
@@ -82,13 +102,21 @@
        
         }
         .title-page{
+            display: flex;
             justify-content: center;
-
-        }
+            width: 100%;
+            font-size: 120%;
+            padding: 36px 0 0 15px ;  
+          }
         .name-rest{
-            padding-right: 75px;
+            padding-left: 15%;
         }
-
+        .i-card-p{
+             margin: 0;
+            padding-left: 10%;
+            
+          
+          }
         
         .main{
           flex-direction: row;
@@ -100,13 +128,7 @@
         
           
         }
-        .title-page{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            font-size: 120%;
-            padding: 36px 0 0 15px ;  
-          }
+      
      
           .starter, .main-course, .dessert{
               display: flex;
