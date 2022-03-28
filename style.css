@@ -889,9 +889,6 @@ template {
   color: #99e2d0;
   background: #99e2d0;
 }
-.card-dish:hover {
-  animation: load-page 2s;
-}
 .card-dish:hover .dish-text {
   display: block;
   white-space: nowrap;
@@ -920,6 +917,7 @@ template {
   animation: coche reverse ease-in-out 0.5s;
 }
 .card-dish:hover .i-c-g {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;

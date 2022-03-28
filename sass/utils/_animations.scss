@@ -115,7 +115,8 @@
     
   
     &:hover{
-      animation: load-page 2s;
+
+       
       .dish-text{
         display: block;
         white-space: nowrap;
@@ -149,7 +150,7 @@
       }
 
   .i-c-g{
-    
+    cursor: pointer;
     display: flex;
     align-items:center ;
     justify-content: center;
