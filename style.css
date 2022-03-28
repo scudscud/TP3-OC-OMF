@@ -890,11 +890,12 @@ template {
 }
 /*-------------------------COCHE--------------------*/
 .card-dish .i-coche {
-  display: block;
+  visibility: hidden;
   color: #99e2d0;
   background: #99e2d0;
 }
 .card-dish:hover .dish-text {
+  display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -904,6 +905,7 @@ template {
   padding-left: 15px;
 }
 .card-dish:hover .dish-1, .card-dish:hover .dish2 {
+  display: block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -931,7 +933,8 @@ template {
   animation: testtranslate1 reverse ease-in-out 0.5s;
 }
 .card-dish:hover .i-coche {
-  display: block;
+  visibility: visible;
+  display: flex;
   color: white;
   background: #99e2d0;
   transform: rotate(-360deg);
@@ -1102,7 +1105,7 @@ hr {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: "...";
-  display: flex;
+  display: block;
   padding-bottom: 5px;
   margin: 0;
 }

@@ -126,11 +126,11 @@ hr{
       
     }
     .dish-1,.dish-2{
-     
+      
       white-space: nowrap;
       overflow:hidden;
       text-overflow:"...";
-      display: flex;
+      display: block;
       padding-bottom: 5px;
       margin:0;
 
