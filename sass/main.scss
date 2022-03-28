@@ -78,13 +78,14 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 33px;
+  width: 0;
+  height: 0;
 
 }
 
 
 .title-meal{
+
  margin-bottom: 30px;
  margin-top: 40px;
 }
@@ -99,6 +100,9 @@ hr{
 }
   
   .card-dish{
+    white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
     display:flex;
     height: 70px;
     width: 100%;
@@ -110,23 +114,34 @@ hr{
     justify-content: space-between;
   
     .dish-text{
-      display: flex;
+      
+      overflow:hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+        display: inline-block;
       flex-direction: column;
       width: 80%;
       justify-content: space-between;
       padding-left: 15px;
       
     }
-    .dish-1,.dish2{
+    .dish-1,.dish-2{
+     
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow:"...";
       display: flex;
       padding-bottom: 5px;
       margin:0;
 
     }
     .price{
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      flex-wrap: nowrap;
       display: flex;
       height: 55%;
-      padding-right: 15px;
       align-items: flex-end;
     
      

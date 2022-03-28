@@ -1,3 +1,7 @@
+
+/*--------------------HEART-----------------------*/
+
+
 .i-card{
     
     display: block;
@@ -11,9 +15,6 @@
      height: 31px;
 
  }
-
-
-
 
 .i-card {
     
@@ -48,22 +49,6 @@
     }
   }
 
-/*
-  @keyframes test {
-      from{
-        transform-origin: 50% 100%;
-        transform: scale(0);       
-      }
-
-   to{
-    transform: scale(1);
-   }
-  }
-*/
-
-
-
-
 .i-card-p {
     
     color: white;
@@ -95,20 +80,7 @@
     animation: test 2s ;
     }
 }
-
-/*
-  @keyframes test {
-      from{
-        transform-origin: 50% 100%;
-        transform: scale(0);       
-      }
-
-   to{
-    transform: scale(1);
-   }
-  }
-
-*/
+/*-----------------anim empty-------------*/
 @keyframes heart{
     from{ 
        
@@ -120,11 +92,9 @@
       height: 30px;
   }
 
-
-
 }
 
-
+/*---------------------anim baloon--------------*/
  @keyframes test {
       from{
         transform-origin: 50% 100%;
@@ -136,3 +106,151 @@
    }
   }
   
+
+  /*-------------------------COCHE--------------------*/
+  .card-dish{ 
+    .i-coche{
+      display:block;
+      color: $tertiary;
+      background: $tertiary;
+  
+    }
+    
+    
+    &:hover{
+      .dish-text{
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        flex-direction: column;
+        width: 80%;
+        justify-content: space-between;
+        padding-left: 15px;
+        
+      }
+      .dish-1,.dish2{
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        padding-bottom: 5px;
+        margin:0;
+  
+      }
+      .price{
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        height: 55%;
+        align-items: flex-end;
+        padding-right: 15px;
+        animation: testtranslate1 reverse ease-in-out 0.5s ;
+       
+      }
+
+  .i-c-g{
+    
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    border-radius: 0px 15px 15px 0px;
+    background: $tertiary;
+    width: 70px;
+    height: 70px;
+    
+    /*transition: transform 0.2s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out*/
+
+    animation: testtranslate1 reverse ease-in-out 0.5s;
+
+  }
+
+
+
+
+
+  .i-coche{
+    display:block;
+    color: white;
+    background: $tertiary;
+   transform: rotate(-360deg);
+    transition: 0.8s ease-in-out;
+    
+   
+  }
+  
+   
+  }
+}
+  
+ @keyframes load-pages{
+   from{
+    transform: translateY(20px);
+    opacity: 0%;}
+   to 
+    {
+      transform: translateY(0px);
+      opacity: 100%;
+
+    }
+ }
+
+/*
+  @keyframes testtranslate{
+    0% {
+      transform: scaleX(0);
+  }
+  17% {
+      transform: scaleX(.18);
+  }
+  24% {
+      transform: scaleX(.4);
+  }
+  46% {
+      transform: scaleX(.81);
+  }
+  100% {
+      transform: scaleX(1);
+
+  }
+
+  }
+  */
+  @keyframes testtranslate1{
+    0% {
+      transform: translateX(0);
+      
+
+    }
+    20% {
+      transform: translateX(10);
+      
+    }
+
+  
+  30% {
+      transform: translateX(20px);
+  }
+  40% {
+      transform: translateX(30px);
+  }
+  50% {
+      transform: translateX(40px);
+  }
+   70%{
+
+    transform: translateX(50px);
+   }
+ 
+   95%{ transform: translateX(55px);
+    opacity: 1;
+
+   }
+
+  100% {
+      transform: translateX(60px);
+      opacity: 1;
+  }
+
+  }
+
+
+ 
