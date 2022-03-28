@@ -6,7 +6,6 @@
 .i-card {
     
   display: block;
-    flex-direction: row-reverse;
     justify-content: center;
     align-content: center;
      margin-top: 15px;
@@ -41,7 +40,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    animation: heart 2s ;
+    animation: heart linear reverse 2s ;
     }
   }
 
@@ -80,15 +79,14 @@
 /*-----------------anim empty-------------*/
 @keyframes heart{
     from{ 
-       
-        height: 0px; 
+      height: 30px;
+        
         
     }
   to{
-      
-      height: 30px;
+    
+      height: 0px;
   }
-
 }
 
 /*---------------------anim baloon--------------*/
@@ -107,6 +105,7 @@
   /*-------------------------COCHE--------------------*/
   .card-dish{ 
     
+    
     .i-coche{
       visibility: hidden;
       color: $tertiary;
@@ -116,6 +115,7 @@
     
   
     &:hover{
+      animation: load-page 2s;
       .dish-text{
         display: block;
         white-space: nowrap;

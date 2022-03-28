@@ -827,7 +827,6 @@ template {
 /*--------------------HEART-----------------------*/
 .i-card {
   display: block;
-  flex-direction: row-reverse;
   justify-content: center;
   align-content: center;
   margin-top: 15px;
@@ -847,7 +846,7 @@ template {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: heart 2s;
+  animation: heart linear reverse 2s;
 }
 
 .i-card-p {
@@ -869,10 +868,10 @@ template {
 /*-----------------anim empty-------------*/
 @keyframes heart {
   from {
-    height: 0px;
+    height: 30px;
   }
   to {
-    height: 30px;
+    height: 0px;
   }
 }
 /*---------------------anim baloon--------------*/
@@ -890,6 +889,9 @@ template {
   visibility: hidden;
   color: #99e2d0;
   background: #99e2d0;
+}
+.card-dish:hover {
+  animation: load-page 2s;
 }
 .card-dish:hover .dish-text {
   display: block;
