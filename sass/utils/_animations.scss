@@ -1,4 +1,4 @@
-
+@import "../base/_typography.scss";
 /*--------------------HEART-----------------------*/
 
 
@@ -17,8 +17,11 @@
      height: 31px;
     color: white;
     -webkit-text-stroke: 2px #000000;
-    &:active{
-      z-index: 1000;
+
+   
+    &.i-card-anim{
+    :hover{
+      
         -webkit-text-stroke: 2px #000000;
 
         
@@ -39,7 +42,7 @@
       $secondary 50%,
       $primary 50%
     );
-    background-position: bottom 0px center;
+   
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -47,7 +50,7 @@
     animation: heart 2s forwards ;
 
     }
-  
+    }
 }
 
 
@@ -83,7 +86,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    animation: test 0.5s ease-in-out;
+    animation: heart  0.5s ease-in-out;
     
     }
 }
@@ -112,13 +115,13 @@
  @keyframes test {
       0%{
         
-        transform: scaleY(0.1);       
+        transform: scaleX(0.1);       
       }
     
      
    100%{
 
-    transform: scaleY(1);
+    transform: scaleX(1);
    }
   }
   
@@ -266,28 +269,26 @@
 
 
  .body-load{
+   z-index: 10;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background: black;
    display: flex;
    flex-direction: row;
    width: 100%;
-   height: 100%;
+   height: 80%;
    align-items: center;
    justify-content: center;
    padding-top: 10%;
+   animation: load-out 5s forwards;
  }
 
 
 
  .un{
-  display: flex;
-  width: 320px;
-  height: 320px;
-  background: $primary;
-  border-radius: 50%;
-  border: 40px solid $secondary;
-  border-top-color: $primary;
-  border-bottom-color: $tertiary;
-  &:hover{
+  
     display: flex;
     width: 320px;
     height: 320px;
@@ -296,31 +297,12 @@
     border: 40px solid $secondary;
     border-top-color: $primary;
     border-bottom-color: $tertiary;
-
-  
     animation: spin 3s linear infinite;
 
   }
 
-
-  
-  
-}
-
  .de{
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 240px;
-  height: 240px;
-  background: $secondary;
-  border-radius: 50%;
-  border: 40px solid $secondary;
-  border-top-color: $primary;
-  border-bottom-color: $tertiary;
-  transform: rotate(-180deg) 4s;
-  &:hover{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,29 +313,12 @@
     border: 40px solid $secondary;
     border-top-color: $primary;
     border-bottom-color: $tertiary;
-   
     animation: spin 3s linear infinite;
-
-  }
 
 }
   
  .de-{
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 160px;
-  height: 160px;
-  background: $tertiary;
-  border-radius: 50%;
-  background: $primary;
-  border-radius: 50%;
-  border: 40px solid $secondary;
-  border-top-color: $primary;
-  border-bottom-color: $tertiary;
-   &:hover{
-   
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,11 +333,11 @@
   border-bottom-color: $tertiary;
   animation: spin 3s linear infinite;
    }
-}
+
 
 
  .i-l::before{
-
+/*
   font-size: 500%;
   -webkit-text-stroke: 2px white;
   stroke-dasharray: 20 20;
@@ -401,7 +366,7 @@
 
 
   &:hover{
-  
+  */
    
    font-size: 500%;
    -webkit-text-stroke: 2px white;
@@ -430,18 +395,38 @@
    -webkit-text-fill-color: transparent;
 
 
-   animation: spin 3s infinite;
+   animation: spin 3s linear infinite;
   }
- }
+ 
+
+
 
 @keyframes spin {
- from {
+ 0% {
    rotate: 0deg;
  }
-to {
+100% {
   rotate: 360deg;
+ display: none;
 }
+
+
 
 }
 
+@keyframes load-out {
+  0%{
+    opacity: 1;
+
+  }
+  99%{
+    opacity: 0.8;
+  }
+  100%{
+   opacity: 0;
+   
+   
+  
  
+  }
+}
