@@ -825,6 +825,7 @@ template {
 
 /*--------------------HEART-----------------------*/
 .i-card {
+  cursor: default;
   display: block;
   justify-content: center;
   align-content: center;
@@ -839,13 +840,15 @@ template {
 .i-card:hover {
   -webkit-text-stroke: 2px #000000;
   background: #9356dc;
-  background: -webkit-repeating-linear-gradient(180deg, #ff79da, #9356dc);
-  background: -moz-repeating-linear-gradient(180deg to top #ff79da 50%, #9356dc 50%);
-  background: repeating-linear-gradient(180deg to top #ff79da 50%, #9356dc 50%);
+  background-position: bottom;
+  background: -webkit-repeating-linear-gradient(0deg, #ff79da, #9356dc);
+  background: -moz-repeating-linear-gradient(0deg #ff79da 50%, #9356dc 50%);
+  background: repeating-linear-gradient(0deg #ff79da 50%, #9356dc 50%);
+  background-position: bottom 0px center;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: heart linear reverse 2s;
+  animation: heart 2s;
 }
 
 .i-card-p {
@@ -855,32 +858,35 @@ template {
 .i-card-p:hover {
   -webkit-text-stroke: 2px #000000;
   background: #9356dc;
-  background: -webkit-repeating-linear-gradient(180deg, #ff79da, #9356dc);
-  background: -moz-repeating-linear-gradient(180deg to top #ff79da 50%, #9356dc 50%);
-  background: repeating-linear-gradient(180deg to top #ff79da 50%, #9356dc 50%);
+  background-position: bottom;
+  background: -webkit-repeating-linear-gradient(90deg, #ff79da, #9356dc);
+  background: -moz-repeating-linear-gradient(90deg #ff79da 50%, #9356dc 50%);
+  background: repeating-linear-gradient(90deg #ff79da 50%, #9356dc 50%);
+  background-position: bottom 0px center;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: test 1s;
+  animation: heart 2s;
 }
 
 /*-----------------anim empty-------------*/
 @keyframes heart {
   from {
-    height: 30px;
+    /*background-position: 0% 0%;*/
+    height: 0px;
   }
   to {
-    height: 0px;
+    /* background-position: 100% 100%;*/
+    height: 30px;
   }
 }
 /*---------------------anim baloon--------------*/
 @keyframes test {
-  from {
-    transform-origin: 90% 50%;
-    transform: scaleY(0);
+  0% {
+    transform: scaleY(0.5);
   }
-  to {
-    transform: scaleY(1);
+  100% {
+    transform: scaleY(0.9);
   }
 }
 /*-------------------------COCHE--------------------*/
@@ -925,7 +931,6 @@ template {
   background: #99e2d0;
   width: 70px;
   height: 70px;
-  /*transition: transform 0.2s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out*/
   animation: coche reverse ease-in-out 0.5s;
 }
 .card-dish:hover .i-coche {
@@ -937,16 +942,6 @@ template {
   transition: 0.8s ease-in-out;
 }
 
-@keyframes load-pages {
-  from {
-    transform: translateY(20px);
-    opacity: 0%;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 100%;
-  }
-}
 /*
   @keyframes testtranslate{
     0% {
@@ -997,6 +992,7 @@ template {
     opacity: 1;
   }
 }
+/*-------------------loader----------------*/
 a {
   text-decoration: none;
   color: black;
@@ -1205,8 +1201,24 @@ hr {
   }
 
   .i-card-p {
+    display: flex;
     margin: 0;
     padding-left: 10%;
+    color: white;
+    -webkit-text-stroke: 2px #000000;
+  }
+  .i-card-p:hover {
+    -webkit-text-stroke: 2px #000000;
+    background: #9356dc;
+    background-position: bottom;
+    background: -webkit-repeating-linear-gradient(0deg, #ff79da 20%, #9356dc 40%);
+    background: -moz-repeating-linear-gradient(0deg #ff79da 20%, #9356dc 40%);
+    background: repeating-linear-gradient(0deg #ff79da 20%, #9356dc 40%);
+    background-position: bottom 0px center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: heart 2s;
   }
 
   .main {

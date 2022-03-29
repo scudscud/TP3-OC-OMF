@@ -4,7 +4,7 @@
 
 
 .i-card {
-    
+    cursor:default;
   display: block;
     justify-content: center;
     align-content: center;
@@ -20,27 +20,28 @@
 
         
     background: $primary;
-    background: -webkit-repeating-linear-gradient(180deg,
+    background-position: bottom;
+    background: -webkit-repeating-linear-gradient(0deg,
     
       $secondary ,
       $primary 
     );
-    background: -moz-repeating-linear-gradient( 180deg
-        to top 
+    background: -moz-repeating-linear-gradient( 0deg
+       
       $secondary 50%,
       $primary 50%
     );
-    background: repeating-linear-gradient( 180deg
-      to top 
+    background: repeating-linear-gradient( 0deg
+     
       $secondary 50%,
       $primary 50%
     );
-
+    background-position: bottom 0px center;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    animation: heart linear reverse 2s ;
+    animation: heart 2s ;
     }
   }
 
@@ -52,52 +53,64 @@
       -webkit-text-stroke: 2px #000000;
 
         
-      background: $primary;
-      background: -webkit-repeating-linear-gradient(180deg,
-      
-        $secondary ,
-        $primary 
-      );
-      background: -moz-repeating-linear-gradient( 180deg
-          to top 
-        $secondary 50%,
-        $primary 50%
-      );
-      background: repeating-linear-gradient( 180deg
-        to top 
-        $secondary 50%,
-        $primary 50%
-      );
-  
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    animation: test 1s ;
+    background: $primary;
+    background-position: bottom;
+    background: -webkit-repeating-linear-gradient(90deg,
+    
+      $secondary ,
+      $primary 
+    );
+    background: -moz-repeating-linear-gradient( 90deg
+       
+      $secondary 50%,
+      $primary 50%
+    );
+    background: repeating-linear-gradient(90deg
+     
+      $secondary 50%,
+      $primary 50%
+    );
+    background-position: bottom 0px center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    animation: heart 2s ;
     
     }
 }
 /*-----------------anim empty-------------*/
 @keyframes heart{
     from{ 
-      height: 30px;
-        
+      /*background-position: 0% 0%;*/
+      height: 0px;
+    
+    
+   
+    
         
     }
   to{
+   /* background-position: 100% 100%;*/
+    height: 30px;
     
-      height: 0px;
+    
+
+     
   }
 }
 
 /*---------------------anim baloon--------------*/
  @keyframes test {
-      from{
-        transform-origin: 90% 50%;
-        transform: scaleY(0);       
+      0%{
+        
+        transform: scaleY(0.5);       
       }
+    
+     
+   100%{
 
-   to{
-    transform: scaleY(1);
+    transform: scaleY(0.9);
    }
   }
   
@@ -159,7 +172,7 @@
     width: 70px;
     height: 70px;
     
-    /*transition: transform 0.2s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out*/
+   
     animation: coche reverse ease-in-out 0.5s;
 
   }
@@ -178,17 +191,7 @@
   }
 }
   
- @keyframes load-pages{
-   from{
-    transform: translateY(20px);
-    opacity: 0%;}
-   to 
-    {
-      transform: translateY(0px);
-      opacity: 100%;
 
-    }
- }
 
 /*
   @keyframes testtranslate{
@@ -251,4 +254,4 @@
   }
 
 
- 
+ /*-------------------loader----------------*/
