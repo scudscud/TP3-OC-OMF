@@ -161,9 +161,12 @@ $background-white : #ffff;
         display: flex;
         padding-top: 7px;
         margin-bottom: 15px;
+
     }
     
 }
+
+
 
 @mixin resto-card-hp-new-hidden{
     display: flex;
@@ -221,19 +224,7 @@ $background-white : #ffff;
         margin-bottom: 15px;
     }
     
-    .i-card{
-        display: flex;
-        justify-content: center;
-        align-content: center;
-         margin-top: 15px;
-         margin-right: 16px;
-         margin-left: 5px;
-         width: 33px;
-         height: 31px;
-
-     }
-    
-
+  
 
 
 }

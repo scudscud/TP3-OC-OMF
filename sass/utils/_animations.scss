@@ -4,6 +4,8 @@
 
 
 .i-card {
+   
+    
     cursor:default;
   display: block;
     justify-content: center;
@@ -42,8 +44,13 @@
     -webkit-text-fill-color: transparent;
     
     animation: heart 2s ;
+
     }
-  }
+  
+}
+
+
+
 
 .i-card-p {
     
@@ -75,7 +82,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     
-    animation: heart 2s ;
+    animation: test 0.5s ease-in-out;
     
     }
 }
@@ -104,13 +111,13 @@
  @keyframes test {
       0%{
         
-        transform: scaleY(0.5);       
+        transform: scaleY(0.1);       
       }
     
      
    100%{
 
-    transform: scaleY(0.9);
+    transform: scaleY(1);
    }
   }
   
