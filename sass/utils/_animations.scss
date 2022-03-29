@@ -5,9 +5,8 @@
 
 .i-card {
    
-    
-    cursor:default;
-  display: block;
+    cursor:pointer;
+   display: block;
     justify-content: center;
     align-content: center;
      margin-top: 15px;
@@ -19,9 +18,8 @@
     -webkit-text-stroke: 2px #000000;
 
    
-    &.i-card-anim{
-    :hover{
-      
+    &:hover{
+    
         -webkit-text-stroke: 2px #000000;
 
         
@@ -49,7 +47,7 @@
     
     animation: heart 2s forwards ;
 
-    }
+    
     }
 }
 
@@ -96,18 +94,11 @@
       /*background-position: 0% 0%;*/
       height: 0px;
     
-    
-   
-    
-        
     }
   to{
    /* background-position: 100% 100%;*/
     height: 30px;
-    
-    
-
-     
+   
   }
 }
 
@@ -128,7 +119,7 @@
 
   /*-------------------------COCHE--------------------*/
   .card-dish{ 
-    
+    @extend .spawn-item;
     
     .i-coche{
       visibility: hidden;
@@ -173,7 +164,7 @@
        
       }
 
-  .i-c-g{
+    .i-c-g{
     cursor: pointer;
     display: flex;
     align-items:center ;
@@ -186,9 +177,9 @@
    
     animation: coche reverse ease-in-out 0.5s;
 
-  }
+    }
 
-  .i-coche{
+    .i-coche{
 
     visibility: visible;
     display:flex;
@@ -197,12 +188,10 @@
    transform: rotate(-360deg);
     transition: 0.8s ease-in-out; 
    
-  }
+    }
   
   }
 }
-  
-
 
 /*
   @keyframes testtranslate{
@@ -229,15 +218,11 @@
   @keyframes coche{
     0% {
       transform: translateX(0);
-      
-
+    
     }
     20% {
-      transform: translateX(10);
-      
+      transform: translateX(10); 
     }
-
-  
   30% {
       transform: translateX(20px);
   }
@@ -269,7 +254,7 @@
 
 
  .body-load{
-   z-index: 10;
+   z-index: 100;
    position: fixed;
    display: flex;
    justify-content: center;
@@ -282,7 +267,6 @@
   
    animation: load-out 5s forwards;
  }
-
 
 
  .un{
@@ -335,36 +319,7 @@
 
 
  .i-l::before{
-/*
-  font-size: 500%;
-  -webkit-text-stroke: 2px white;
-  stroke-dasharray: 20 20;
-  stroke-dashoffset: 10;
-  
- 
-  background: -webkit-repeating-linear-gradient(90deg,
-  
-    $secondary ,
-    $primary 
-  );
-  background: -moz-repeating-linear-gradient( 90deg
-     
-    $secondary 50%,
-    $primary 50%
-  );
-  background: repeating-linear-gradient(90deg
-   
-    $secondary 50%,
-    $primary 50%
-  );
-  background-position: bottom 0px center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 
-
-  &:hover{
-  */
    
    font-size: 500%;
    -webkit-text-stroke: 2px white;
@@ -419,12 +374,50 @@
   }
   99%{
     opacity: 0.8;
+    z-index: 100;
   }
   100%{
    opacity: 0;
+   z-index: -100;
    
    
   
  
   }
 }
+/*-------------------------------fin lOAD--------------------------*/
+
+
+
+
+/*--------------------spwan-item--------------------------*/
+
+  
+
+.spawn-item {
+animation: spawn-item 4s linear;
+ 
+
+
+
+}
+
+
+
+@keyframes spawn-item  {
+  
+  0% {
+    
+    
+    transform: translatey(20px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translatey(0px);
+    opacity: 100%;
+    
+    
+  }
+   
+}
+

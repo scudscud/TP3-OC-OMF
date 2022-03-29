@@ -163,7 +163,20 @@ $background-white : #ffff;
         margin-bottom: 15px;
 
     }
-    
+    .i-card{
+        cursor:pointer;
+        display: block;
+         justify-content: center;
+         align-content: center;
+          margin-top: 15px;
+          margin-right: 16px;
+          margin-left: 5px;
+          width: 33px;
+          height: 31px;
+         color: white;
+         -webkit-text-stroke: 2px #000000;
+         
+    }
 }
 
 
@@ -224,7 +237,20 @@ $background-white : #ffff;
         margin-bottom: 15px;
     }
     
-  
+    .i-card{
+        cursor:pointer;
+        display: block;
+         justify-content: center;
+         align-content: center;
+          margin-top: 15px;
+          margin-right: 16px;
+          margin-left: 5px;
+          width: 33px;
+          height: 31px;
+         color: white;
+         -webkit-text-stroke: 2px #000000;
+         
+    }
 
 
 }
