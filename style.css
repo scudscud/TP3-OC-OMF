@@ -5,11 +5,11 @@
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h4, h5 {
+h1, h5 {
   font-family: "Shrikhand", cursive;
 }
 
-h3 {
+h3, h2, h4 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -224,11 +224,11 @@ template {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h4, h5 {
+h1, h5 {
   font-family: "Shrikhand", cursive;
 }
 
-h3 {
+h3, h2, h4 {
   font-family: "Roboto", sans-serif;
 }
 
@@ -958,7 +958,6 @@ h3 {
   margin-top: 30px;
   margin-bottom: 0;
   font-size: 145%;
-  font-weight: bold;
   text-align: center;
 }
 .reservation p {
@@ -1097,9 +1096,9 @@ h3 {
   display: flex;
   padding-top: 7px;
   margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
 }
 .card-hp-3 .i-card, .card-hp-4 .i-card {
-  cursor: pointer;
   display: block;
   justify-content: center;
   align-content: center;
@@ -1168,6 +1167,7 @@ h3 {
   display: flex;
   padding-top: 7px;
   margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
 }
 .card-hp-1 .i-card, .card-hp-2 .i-card {
   cursor: pointer;

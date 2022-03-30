@@ -1,7 +1,3 @@
-
-
-$background-linear-gradient: linear-gradient($secondary,$primary);
-
 /* MIXINS HOMEPAGE VERSION MOBILE */
 @mixin title-omf {
     display: flex;
@@ -162,6 +158,8 @@ $background-white : #ffff;
         display: flex;
         padding-top: 7px;
         margin-bottom: 15px;
+        font-family: "Roboto", sans-serif;
+        
 
     }
     .i-card{
@@ -236,10 +234,13 @@ $background-white : #ffff;
         display: flex;
         padding-top: 7px;
         margin-bottom: 15px;
+        font-family: "Roboto", sans-serif;
+        
+        
     }
     
     .i-card{
-        cursor:pointer;
+        
         display: block;
          justify-content: center;
          align-content: center;
