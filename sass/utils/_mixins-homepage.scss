@@ -49,9 +49,10 @@ $background-linear-gradient: linear-gradient($secondary,$primary);
 }
 $background-white : #ffff;
 
-@mixin hover-ligthen-boxshadow{
-  filter: brightness(1.2);
-  box-shadow: 10px 7px 7px darken($color:  #e5e5e5, $amount: 30)
+@mixin anim-spawn{
+    animation: spawn-item 2s ;
+    animation-delay: 4s;
+
 }
 
 

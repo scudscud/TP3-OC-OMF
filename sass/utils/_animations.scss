@@ -265,7 +265,7 @@
    width: 100%;
    height: 100%;
   
-   animation: load-out 10s forwards;
+   animation: load-out 3s forwards;
  }
 
 
@@ -323,7 +323,7 @@
 
  .i-l{
 
-   
+   position: relative;
    font-size: 500%;
    -webkit-text-stroke: 2px white;
    stroke-dasharray: 20 20;
@@ -347,8 +347,8 @@
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
   
-   animation: spin 2s linear reverse infinite;
-   
+  
+   animation: spin-2 2s linear reverse infinite;
   }
  
 
@@ -369,7 +369,7 @@
 @keyframes spin-2 {
   0% { 
     
-    rotate: 0deg;
+    rotate: 360deg;
     transform: rotateY(0deg);
   }
  100% {
@@ -390,7 +390,7 @@
 
   }
   99%{
-    opacity: 0.8;
+    opacity: 1;
     z-index: 100;
   }
   100%{
@@ -412,7 +412,7 @@
   
 
 .spawn-item {
-animation: spawn-item 4s linear;
+animation: spawn-item 2s linear delay 3s;
  
 
 
@@ -428,6 +428,16 @@ animation: spawn-item 4s linear;
     
     transform: translatey(20px);
     opacity: 0%;
+  }
+
+
+
+  50%{
+
+    transform: translatey(10px);
+    opacity: 50%
+
+
   }
   100% {
     transform: translatey(0px);

@@ -11,6 +11,7 @@
 .intro{
     height: 285px;
     @include background-grey;
+    @include  anim-spawn;
    
 }
 
@@ -32,6 +33,7 @@
 }
 
 .reservation{
+    @include  anim-spawn;
     @include mobile-layout;
     height: 160px;
 
@@ -56,6 +58,7 @@
 
 
 .tuto{
+    @include  anim-spawn;
     display: flex;
     flex-direction: column;
     height: 440px;
@@ -82,6 +85,7 @@
 }
 
 .resto{
+    @include  anim-spawn;
     @include background-grey;
     padding:55px 20px 65px 20px;
     

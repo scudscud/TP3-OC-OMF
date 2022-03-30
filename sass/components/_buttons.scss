@@ -62,7 +62,7 @@
      background: linear-gradient($secondary,$primary);
      border-radius: 30px;
      color: white;
-     @include box-shadow; 
+     @include button-box-shadow ; 
      &:hover{
       @include button-hover-ligthen-boxshadow;
       
