@@ -412,10 +412,11 @@ h3 {
   flex-direction: row;
   width: 100%;
   height: 100%;
-  animation: load-out 5s forwards;
+  animation: load-out 10s forwards;
 }
 
 .un {
+  z-index: 110;
   display: flex;
   width: 320px;
   height: 320px;
@@ -424,13 +425,12 @@ h3 {
   border: 40px solid #ff79da;
   border-top-color: #9356dc;
   border-bottom-color: #99e2d0;
-  animation: spin 3s linear infinite;
+  animation: spin 5s linear infinite;
 }
 
 .de {
+  z-index: 100;
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 240px;
   height: 240px;
   background: #ff79da;
@@ -438,7 +438,7 @@ h3 {
   border: 40px solid #ff79da;
   border-top-color: #9356dc;
   border-bottom-color: #99e2d0;
-  animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite reverse;
 }
 
 .de- {
@@ -457,7 +457,7 @@ h3 {
   animation: spin 3s linear infinite;
 }
 
-.i-l::before {
+.i-l {
   font-size: 500%;
   -webkit-text-stroke: 2px white;
   stroke-dasharray: 20 20;
@@ -465,19 +465,29 @@ h3 {
   background: -webkit-repeating-linear-gradient(90deg, #ff79da, #9356dc);
   background: -moz-repeating-linear-gradient(90deg #ff79da 50%, #9356dc 50%);
   background: repeating-linear-gradient(90deg #ff79da 50%, #9356dc 50%);
-  background-position: bottom 0px center;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: spin 3s linear infinite;
+  animation: spin 2s linear reverse infinite;
 }
 
 @keyframes spin {
   0% {
-    rotate: 0deg;
+    rotate: 360deg;
   }
   100% {
-    rotate: 360deg;
+    rotate: 0deg;
+    display: none;
+  }
+}
+@keyframes spin-2 {
+  0% {
+    rotate: 0deg;
+    transform: rotateY(0deg);
+  }
+  100% {
+    rotate: 0deg;
+    transform: rotateY(360deg);
     display: none;
   }
 }

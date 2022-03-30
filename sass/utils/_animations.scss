@@ -265,13 +265,13 @@
    width: 100%;
    height: 100%;
   
-   animation: load-out 5s forwards;
+   animation: load-out 10s forwards;
  }
 
 
  .un{
-  
-    display: flex;
+  z-index: 110;
+  display: flex;
     width: 320px;
     height: 320px;
     background: $primary;
@@ -279,15 +279,15 @@
     border: 40px solid $secondary;
     border-top-color: $primary;
     border-bottom-color: $tertiary;
-    animation: spin 3s linear infinite;
+    animation: spin 5s linear infinite ;
 
   }
 
  .de{
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   z-index:100;
+    
+    
+   display: flex;
     width: 240px;
     height: 240px;
     background: $secondary;
@@ -295,12 +295,13 @@
     border: 40px solid $secondary;
     border-top-color: $primary;
     border-bottom-color: $tertiary;
-    animation: spin 3s linear infinite;
-
+    animation: spin 3s linear infinite reverse  ;
+    
 }
   
  .de-{
-  
+ 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,20 +314,20 @@
   border: 40px solid $secondary;
   border-top-color: $primary;
   border-bottom-color: $tertiary;
-  animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite ;
+  
+  
    }
 
 
 
- .i-l::before{
+ .i-l{
 
    
    font-size: 500%;
    -webkit-text-stroke: 2px white;
    stroke-dasharray: 20 20;
    stroke-dashoffset: 10;
-   
-  
    background: -webkit-repeating-linear-gradient(90deg,
    
      $secondary ,
@@ -342,13 +343,12 @@
      $secondary 50%,
      $primary 50%
    );
-   background-position: bottom 0px center;
    background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-
-
-   animation: spin 3s linear infinite;
+  
+   animation: spin 2s linear reverse infinite;
+   
   }
  
 
@@ -356,16 +356,33 @@
 
 @keyframes spin {
  0% {
-   rotate: 0deg;
+   rotate: 360deg;
+   
  }
 100% {
-  rotate: 360deg;
+  rotate: 0deg;
  display: none;
 }
 
-
-
 }
+
+@keyframes spin-2 {
+  0% { 
+    
+    rotate: 0deg;
+    transform: rotateY(0deg);
+  }
+ 100% {
+  rotate: 0deg;
+  transform: rotateY(360deg);
+  display: none;
+ }
+ 
+ }
+ 
+
+ 
+
 
 @keyframes load-out {
   0%{
