@@ -111,7 +111,7 @@ $background-white : #ffff;
     @include box-shadow;
     border-radius: 10px;
     text-decoration: none;
-    &:visited{color: black;};
+    color: black;
 
     .pic-main{
         width: 100%;
@@ -191,7 +191,7 @@ $background-white : #ffff;
     @include box-shadow;
     border-radius: 20px;
     text-decoration: none;
-    &:visited{color: black;};
+    color: black;
 
     .sticker-new{
         display: flex;

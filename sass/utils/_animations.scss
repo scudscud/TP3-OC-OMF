@@ -16,7 +16,7 @@
      height: 31px;
     color: white;
     -webkit-text-stroke: 2px #000000;
-
+    animation: heart 2s forwards reverse ;  
    
     &:hover{
     
@@ -49,6 +49,10 @@
 
     
     }
+     
+
+
+
 }
 
 
@@ -87,6 +91,8 @@
     animation: heart  0.5s ease-in-out;
     
     }
+    
+
 }
 /*-----------------anim empty-------------*/
 @keyframes heart{
@@ -118,8 +124,22 @@
   
 
   /*-------------------------COCHE--------------------*/
+  .starter{
+    animation: spawn-item 0.5s;
+  }
+  
+  .main-course{
+    animation: spawn-item 1.5s;
+
+  }
+
+  .dessert{
+    animation: spawn-item 2.5s;
+  }
+
+
   .card-dish{ 
-    @extend .spawn-item;
+    cursor: pointer;
     
     .i-coche{
       visibility: hidden;
@@ -159,10 +179,71 @@
         text-overflow: ellipsis;
         height: 55%;
         align-items: flex-end;
-        padding-right: 15px;
+        padding-right: 15px;   
         animation: coche reverse ease-in-out 0.5s ;
-       
+        
       }
+
+      .i-c-g{
+      cursor: pointer;
+      display: flex;
+      align-items:center ;
+      justify-content: center;
+      border-radius: 0px 15px 15px 0px;
+      background: $tertiary;
+      width: 70px;
+      height: 70px;
+      animation: coche reverse ease-in-out 0.5s ;
+      
+    }
+
+    .i-coche{
+    visibility: visible;
+    display:flex;
+    color: white;
+    background: $tertiary;
+   transform: rotate(-360deg) ;
+    transition: 0.8s ease-in-out ; 
+    
+    }
+    
+
+
+  }
+  /*
+  &:hover{
+
+    .dish-text{
+      display: block;
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      flex-direction: column;
+      width: 80%;
+      justify-content: space-between;
+      padding-left: 15px;
+      
+    }
+    .dish-1,.dish2{
+      display: block;
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      padding-bottom: 5px;
+      margin:0;
+
+    }
+    .price{
+      
+      white-space: nowrap;
+      overflow:hidden;
+      text-overflow: ellipsis;
+      height: 55%;
+      align-items: flex-end;
+      padding-right: 15px;
+      animation: coche reverse ease-in-out 0.5s ;
+      animation-fill-mode: backwards;
+    }
 
     .i-c-g{
     cursor: pointer;
@@ -173,24 +254,29 @@
     background: $tertiary;
     width: 70px;
     height: 70px;
-    
-   
-    animation: coche reverse ease-in-out 0.5s;
+    animation: coche reverse ease-in-out 0.5s ;
+    animation-fill-mode: backwards;
 
-    }
-
-    .i-coche{
-
-    visibility: visible;
-    display:flex;
-    color: white;
-    background: $tertiary;
-   transform: rotate(-360deg);
-    transition: 0.8s ease-in-out; 
-   
-    }
-  
   }
+
+  .i-coche{
+  visibility: visible;
+  display:flex;
+  color: white;
+  background: $tertiary;
+ transform: rotate(-360deg) ;
+  transition: 0.8s ease-in-out ; 
+  animation-fill-mode: backwards;
+ 
+  }
+  
+
+
+  }
+
+ */
+
+ 
 }
 
 /*
@@ -242,12 +328,23 @@
 
    }
 
-  100% {
+  80% {
       transform: translateX(60px);
       opacity: 1;
   }
+   100%{
 
+    transform: translateX(0px);
+    
+    opacity: 0;
+
+
+   }
   }
+
+
+ 
+
 
 
  /*-------------------loader----------------*/
@@ -409,36 +506,16 @@
 
 /*--------------------spwan-item--------------------------*/
 
-  
-
-.spawn-item {
-animation: spawn-item 2s linear delay 3s;
- 
-
-
-
-}
-
 
 
 @keyframes spawn-item  {
   
   0% {
     
-    
     transform: translatey(20px);
     opacity: 0%;
   }
 
-
-
-  50%{
-
-    transform: translatey(10px);
-    opacity: 50%
-
-
-  }
   100% {
     transform: translatey(0px);
     opacity: 100%;
