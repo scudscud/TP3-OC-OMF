@@ -4,3 +4,21 @@
     align-items: center;
     
 }
+
+/*------------------button----------------------*/
+@mixin button-bkg-linear {
+    background:  linear-gradient($secondary,$primary);
+ 
+ }
+ 
+ 
+ 
+ @mixin button-box-shadow {
+     box-shadow: 5px 10px 0px #e5e5e5; 
+     
+ }
+ 
+   @mixin button-hover-ligthen-boxshadow{
+     filter: brightness(1.2);
+     box-shadow: 5px 10px 0px darken($color:  #e5e5e5, $amount: 30);
+   }

@@ -6,11 +6,12 @@
 @import "layout/_responsive-homepage.scss";
 @import "utils/_variables-homepage.scss";
 @import "utils/_mixins-pages.scss";
+@import "components/_buttons.scss";
+@import "utils/_mixins-pages.scss";
 @import "utils/_variables-pages.scss";
 @import "components/_buttons.scss";
 @import "layout/_header.scss";
 @import "layout/_footer.scss";
-@import "utils/_functions.scss";
 @import "utils/_animations.scss";
 
 
@@ -187,6 +188,6 @@ hr{
   padding: 20px 0 50px 0;
 }
 
-@include responsive-button-order;
+
 @include responsive-pages-main;
 

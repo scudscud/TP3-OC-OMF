@@ -1,19 +1,3 @@
-@mixin button-bkg-linear {
-   background:  linear-gradient($secondary,$primary);
-
-}
-
-
-
-@mixin button-box-shadow {
-    box-shadow: 5px 10px 0px #e5e5e5; 
-    
-}
-
-  @mixin button-hover-ligthen-boxshadow{
-    filter: brightness(1.2);
-    box-shadow: 5px 10px 0px darken($color:  #e5e5e5, $amount: 30);
-  }
 
 
 
@@ -26,6 +10,7 @@
      justify-content: center;
      align-items: center;
      text-decoration: none;
+     max-width: 320px;
      width: 65%;
      height: 60px;
      border-radius: 30px;
@@ -57,6 +42,7 @@
      justify-content: center;
      align-items: center;
      text-decoration: none;
+     max-width: 300px;
      width: 65%;
      height: 60px;
      background: linear-gradient($secondary,$primary);

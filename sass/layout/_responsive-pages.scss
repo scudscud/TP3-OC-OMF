@@ -1,15 +1,3 @@
-@mixin responsive-button-order {
-    
-    @media screen and (min-width: 540px) {
-
-        .button-place-order{
-            .click{
-             width: 300px;
-            }
-         }
-
-    }
-}
 
 @mixin responsive-pages-main {
 

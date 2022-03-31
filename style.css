@@ -405,7 +405,18 @@ template {
   display: flex;
   width: 100%;
 }
-
+.card-hp-3 .i-card, .card-hp-4 .i-card {
+  cursor: pointer;
+  display: block;
+  justify-content: center;
+  align-content: center;
+  padding-right: 30px;
+  padding-top: 5px;
+  width: 33px;
+  height: 31px;
+  color: white;
+  -webkit-text-stroke: 2px #000000;
+}
 .card-hp-1, .card-hp-2 {
   display: flex;
   flex-direction: column;
@@ -470,7 +481,18 @@ template {
   display: flex;
   width: 100%;
 }
-
+.card-hp-1 .i-card, .card-hp-2 .i-card {
+  cursor: pointer;
+  display: block;
+  justify-content: center;
+  align-content: center;
+  padding-right: 30px;
+  padding-top: 5px;
+  width: 33px;
+  height: 31px;
+  color: white;
+  -webkit-text-stroke: 2px #000000;
+}
 @media only screen and (min-width: 500px) {
   .intro {
     display: flex;
@@ -689,6 +711,7 @@ template {
     background-color: #99e2d0;
   }
 }
+/*------------------button----------------------*/
 .button-nav {
   display: flex;
   flex-direction: column;
@@ -703,6 +726,7 @@ template {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  max-width: 320px;
   width: 65%;
   height: 60px;
   border-radius: 30px;
@@ -733,6 +757,70 @@ template {
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  max-width: 300px;
+  width: 65%;
+  height: 60px;
+  background: linear-gradient(#ff79da, #9356dc);
+  border-radius: 30px;
+  color: white;
+  box-shadow: 5px 10px 0px #e5e5e5;
+}
+.button-place-order .click:hover {
+  filter: brightness(1.2);
+  box-shadow: 5px 10px 0px #999999;
+}
+.button-place-order .click .span-button-order {
+  font-size: 110%;
+  text-align: center;
+}
+
+/*------------------button----------------------*/
+.button-nav {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.button-nav .button-explore-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  max-width: 320px;
+  width: 65%;
+  height: 60px;
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 5px 10px 0px #e5e5e5;
+}
+.button-nav .button-explore-home:hover {
+  filter: brightness(1.2);
+  box-shadow: 5px 10px 0px #999999;
+}
+.button-nav .button-explore-home .span-button-home {
+  font-size: 110%;
+  text-align: center;
+}
+
+.button-place-order {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.button-place-order .click {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  max-width: 300px;
   width: 65%;
   height: 60px;
   background: linear-gradient(#ff79da, #9356dc);
@@ -824,19 +912,7 @@ template {
 }
 
 /*--------------------HEART-----------------------*/
-.i-card-heart .i-card, .card-hp-3 .i-card, .card-hp-4 .i-card, .card-hp-1 .i-card, .card-hp-2 .i-card {
-  cursor: pointer;
-  display: block;
-  justify-content: center;
-  align-content: center;
-  padding-right: 30px;
-  padding-top: 5px;
-  width: 33px;
-  height: 31px;
-  color: white;
-  -webkit-text-stroke: 2px #000000;
-}
-.i-card-heart .i-card:hover, .card-hp-3 .i-card:hover, .card-hp-4 .i-card:hover, .card-hp-1 .i-card:hover, .card-hp-2 .i-card:hover {
+.i-card-heart-animation, .card-hp-3 .i-card:hover, .card-hp-4 .i-card:hover, .card-hp-1 .i-card:hover, .card-hp-2 .i-card:hover {
   -webkit-text-stroke: 2px #000000;
   background: #9356dc;
   background-position: bottom;
@@ -1500,11 +1576,6 @@ hr {
   padding: 20px 0 50px 0;
 }
 
-@media screen and (min-width: 540px) {
-  .button-place-order .click {
-    width: 300px;
-  }
-}
 @media screen and (min-width: 715px) {
   .top-pic-page {
     height: 335px;
