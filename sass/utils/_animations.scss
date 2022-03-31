@@ -141,29 +141,84 @@
    }
   }
   
+/*-------------------------------SPAWN--------------------------------------*/
 
-  /*-------------------------COCHE--------------------*/
-  .starter{
-    -webkit-animation: spawn-item 0.5s;
-            animation: spawn-item 0.5s;
-  }
   
-  .main-course{
-    -webkit-animation: spawn-item 1.5s;
-            animation: spawn-item 1.5s;
-
-  }
-
-  .dessert{
+   .spawn-meal{
     -webkit-animation: spawn-item 2.5s;
-            animation: spawn-item 2.5s;
-  }
+    animation: spawn-item 2.5s;
+   }
 
 
+ /*-------------------------COCHE--------------------*/
+
+
+.card-dish-animation{
+
+      .dish-text{
+        display: block;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        flex-direction: column;
+        width: 80%;
+        justify-content: space-between;
+         transform: rotate(-360deg) ;
+        padding-left: 15px;
+        
+      }
+      .dish-1,.dish2{
+        display: block;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        padding-bottom: 5px;
+        margin:0;
+  
+      }
+      .price{
+        
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        height: 55%;
+        align-items: flex-end;
+        padding-right: 6%;   
+        animation: coche reverse ease-in-out 1s ;
+        
+      }
+
+      .i-c-g{
+      cursor: pointer;
+      display: flex;
+      align-items:center ;
+      justify-content: center;
+      border-radius: 0px 15px 15px 0px;
+      background: $tertiary;
+      width: 70px;
+      height: 70px;
+      animation: coche reverse ease-in-out 1s ;
+      
+    }
+
+    .i-coche{
+    visibility: visible;
+    display:flex;
+    color: white;
+    background: $tertiary;
+   transform: rotate(-360deg) ;
+    transition: 1s ease-in-out reverse ; 
+    
+    }
+    
+    }
+  
+
+/*
   .card-dish{ 
     cursor: pointer;
     .i-c-g{
-      cursor: pointer;
+      
       display: flex;
       align-items:center ;
       justify-content: center;
@@ -182,7 +237,7 @@
     }
     
   
-    &:hover{
+    :hover{
 
        
       .dish-text{
@@ -240,8 +295,6 @@
     
     }
     
-
-
   }
   /*
   &:hover{
@@ -310,7 +363,7 @@
  */
 
  
-}
+
 
 /*
   @keyframes testtranslate{

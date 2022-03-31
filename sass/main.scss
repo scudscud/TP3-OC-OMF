@@ -91,7 +91,12 @@ a{
 
  margin-bottom: 30px;
  margin-top: 40px;
+
 }
+.dessert,.main-course,.starter{
+  @extend .spawn-meal;
+}
+
 hr{
   text-align: left;
   width: 50px;
@@ -103,6 +108,8 @@ hr{
 }
   
   .card-dish{
+   
+    cursor: pointer;
     white-space: nowrap;
         overflow:hidden;
         text-overflow: ellipsis;
@@ -142,8 +149,28 @@ hr{
       display: flex;
       height: 55%;
       align-items: flex-end;
-    
-     
+    }
+    .i-c-g{
+      
+      display: flex;
+      align-items:center ;
+      justify-content: center;
+      border-radius: 0px 15px 15px 0px;
+      background: $tertiary;
+      width: 0px;
+      height: 70px;
+      
+    }
+    .i-coche{
+
+      visibility: hidden;
+      color: $tertiary;
+      background: $tertiary;
+
+      
+    }
+    &:hover{
+      @extend .card-dish-animation;
     }
   }
 
