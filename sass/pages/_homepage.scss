@@ -87,6 +87,8 @@
     
     @include background-grey;
     padding:55px 20px 65px 20px;
+    display: flex;
+    flex-direction: column;
     
     .tit-resto{
         width: 100%;

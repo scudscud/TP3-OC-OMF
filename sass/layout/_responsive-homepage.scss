@@ -34,7 +34,7 @@
 }
 
 
-@media only screen and (min-width: 630px){
+@media only screen and (min-width: 750px){
     .intro{
      display: flex;
      flex-direction: column;
@@ -102,11 +102,13 @@
     .tit-resto{
         padding-bottom: 25px;
         margin-top: 0;
+        
     }
 
     .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{ 
-        width: 48%;   
+        width: 10%;   
         height: 250px; 
+        
     }
 }
  
@@ -135,7 +137,7 @@
                
         }
         
-        .number-fonc-tuto{
+        .num-fonc-tuto{
             position: absolute;
             right: 0px;
         }

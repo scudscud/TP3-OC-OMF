@@ -1,21 +1,21 @@
 @import "../base/_typography.scss";
 /*--------------------HEART-----------------------*/
 
-
+.i-card-heart{
 
 .i-card {
    
     cursor:pointer;
-   display: block;
+    display: block;
     justify-content: center;
     align-content: center;
-     margin-top: 15px;
-     margin-right: 16px;
-     margin-left: 5px;
+    padding-right: 30px;
+    padding-top: 5px;
      width: 33px;
      height: 31px;
     color: white;
     -webkit-text-stroke: 2px #000000;
+    
     
    
     &:hover{
@@ -54,7 +54,7 @@
 
 }
 
-
+}
 
 
 .i-card-p {
@@ -417,7 +417,7 @@
 
  /*-------------------loader----------------*/
 
-
+/*
  .body-load{
    z-index: 100;
    position: fixed;

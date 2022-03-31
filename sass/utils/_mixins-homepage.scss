@@ -70,7 +70,7 @@ $background-white : #ffff;
         cursor: pointer;
     }
 
-    .number-fonc-tuto{
+    .num-fonc-tuto{
         display: flex;
         position: absolute;
         left: -10px;
@@ -102,7 +102,7 @@ $background-white : #ffff;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 250px;
+    height: 245px;
     margin-top: 20px;
     @include box-shadow;
     border-radius: 10px;
@@ -111,7 +111,7 @@ $background-white : #ffff;
 
     .pic-main{
         width: 100%;
-        height: 100%;
+        height: 170px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
 
@@ -140,42 +140,40 @@ $background-white : #ffff;
 
     .description{
         display: flex;
-       height: 30%;
-       justify-content: space-between;
-       padding-left: 15px;
+        flex-direction: row;
+       width: 97%;
+       height: 75px;
         @include background-white;
+        padding: 15px;
         border-radius: 20px;
+        justify-content: space-between;
     }
+    .text-description{
+        display: flex;
+       flex-direction: column;
+       width: 100%;
+       justify-content:left;
+       align-items: center;
+       justify-content: space-between;
+      
+       
+
+    }
+
     .name-rest-hp{
         display: flex;
-        flex-direction: column;
-        width: 85%;
-        margin-top: 15px;
-        margin-bottom: 0;     
+        width: 100%;
+        margin: 0;     
         
     }
     .localisation{
         display: flex;
-        padding-top: 7px;
-        margin-bottom: 15px;
-        font-family: "Roboto", sans-serif;
+        width: 100%;
         
-
+    
     }
-    .i-card{
-        cursor:pointer;
-        display: block;
-         justify-content: center;
-         align-content: center;
-          margin-top: 15px;
-          margin-right: 16px;
-          margin-left: 5px;
-          width: 33px;
-          height: 31px;
-         color: white;
-         -webkit-text-stroke: 2px #000000;
-         
-    }
+    @extend .i-card-heart
+ 
 }
 
 
@@ -184,7 +182,7 @@ $background-white : #ffff;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 250px;
     margin-top: 20px;
     @include box-shadow;
     border-radius: 20px;
@@ -205,54 +203,46 @@ $background-white : #ffff;
     }
     .pic-main{
         width: 100%;
-        height: 100%;
+        height: 170px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
 
     }
-    
     .description{
-       display: flex;
-       height: 80px;
-       justify-content: space-between;
-       padding-left: 15px;
+        display: flex;
+        flex-direction: row;
+       width: 97%;
+       height: 75px;
         @include background-white;
+        padding: 15px;
         border-radius: 20px;
+        justify-content: space-between;
+    }
+    .text-description{
+        display: flex;
+       flex-direction: column;
+       width: 100%;
+       justify-content:left;
+       align-items: center;
+       justify-content: space-between; 
 
     }
-    
-    
+
     .name-rest-hp{
         display: flex;
-        flex-direction: column;
-        width: 85%;
-        margin-top: 15px;
-        margin-bottom: 0;     
+        width: 100%;
+        margin: 0;     
+        
     }
-
     .localisation{
         display: flex;
-        padding-top: 7px;
-        margin-bottom: 15px;
-        font-family: "Roboto", sans-serif;
+        width: 100%;
         
-        
+    
     }
     
-    .i-card{
-        
-        display: block;
-         justify-content: center;
-         align-content: center;
-          margin-top: 15px;
-          margin-right: 16px;
-          margin-left: 5px;
-          width: 33px;
-          height: 31px;
-         color: white;
-         -webkit-text-stroke: 2px #000000;
-         
-    }
-
+    @extend .i-card-heart
+ 
+    
 
 }
