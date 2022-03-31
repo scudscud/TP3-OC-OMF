@@ -1152,9 +1152,7 @@ template {
   border: 40px solid #ff79da;
   border-top-color: #9356dc;
   border-bottom-color: #99e2d0;
-  -moz-animation: spin 5s linear infinite;
-  -webkit-animation: spin 5s linear infinite;
-  animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite reverse;
 }
 
 .de {
@@ -1166,9 +1164,7 @@ template {
   border: 40px solid #ff79da;
   border-top-color: #9356dc;
   border-bottom-color: #99e2d0;
-  -moz-animation: spin 5s linear infinite;
-  -webkit-animation: spin 3s linear infinite reverse;
-  animation: spin 3s linear infinite reverse;
+  animation: spin 3s linear infinite;
 }
 
 .de- {
@@ -1184,8 +1180,7 @@ template {
   border: 40px solid #ff79da;
   border-top-color: #9356dc;
   border-bottom-color: #99e2d0;
-  -webkit-animation: spin 3s linear infinite;
-  animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite reverse;
 }
 
 .i-l {
@@ -1214,7 +1209,6 @@ template {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: spin-2 5s linear infinite;
 }
 
 @keyframes spin {
@@ -1237,21 +1231,23 @@ template {
 }
 @keyframes spin-2 {
   0% {
+    transform: rotate(360deg);
     transform: rotateY(0deg);
   }
   100% {
+    transform: rotate(0deg);
     transform: rotateY(360deg);
     display: none;
   }
 }
 @-webkit-keyframes spin-2 {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
     transform: rotateY(0deg);
   }
   100% {
-    rotate: 360deg;
-    transform: rotateY(360deg);
+    transform: rotate(0deg);
+    transform: rotateY(0deg);
     display: none;
   }
 }
