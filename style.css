@@ -620,7 +620,7 @@ template {
   .card-hp-1, .card-hp-2, .card-hp-3, .card-hp-4 {
     display: flex;
     width: 48%;
-    height: 350px;
+    height: 320px;
     margin-bottom: 35px;
     box-shadow: -10px 30px 10px #dbd9d9;
   }
@@ -628,7 +628,7 @@ template {
     height: 100%;
   }
   .card-hp-1 .sticker-new, .card-hp-2 .sticker-new, .card-hp-3 .sticker-new, .card-hp-4 .sticker-new {
-    height: 290px;
+    height: 240px;
   }
   .card-hp-1 .sticker-new .new-menu, .card-hp-2 .sticker-new .new-menu, .card-hp-3 .sticker-new .new-menu, .card-hp-4 .sticker-new .new-menu {
     display: flex;
@@ -666,14 +666,14 @@ template {
   .card-hp-1, .card-hp-2, .card-hp-3, .card-hp-4 {
     display: flex;
     width: 24%;
-    height: 350px;
+    height: 320px;
     margin-bottom: 35px;
   }
   .card-hp-1 .pic-main, .card-hp-2 .pic-main, .card-hp-3 .pic-main, .card-hp-4 .pic-main {
     height: 100%;
   }
   .card-hp-1 .sticker-new, .card-hp-2 .sticker-new, .card-hp-3 .sticker-new, .card-hp-4 .sticker-new {
-    height: 250px;
+    height: 240px;
   }
   .card-hp-1 .sticker-new .new-menu, .card-hp-2 .sticker-new .new-menu, .card-hp-3 .sticker-new .new-menu, .card-hp-4 .sticker-new .new-menu {
     display: flex;
@@ -813,9 +813,7 @@ template {
   padding-left: 7px;
   padding-right: 5px;
 }
-.footer .fa-handshake {
-  padding-right: 10px;
-  rotate: -40deg;
+.footer .fa-handshake-angle {
   width: 20px;
   padding-right: 12px;
 }
@@ -859,7 +857,7 @@ template {
   -webkit-text-stroke: 2px #000000;
   background: #9356dc;
   background-position: bottom;
-  background: -webkit-repeating-linear-gradient(90deg, #ff79da, #9356dc);
+  background-color: -webkit-repeating-linear-gradient(90deg, #ff79da, #9356dc);
   background: repeating-linear-gradient(90deg #ff79da 50%, #9356dc 50%);
   background-position: bottom 0px center;
   background-clip: text;
@@ -1077,10 +1075,10 @@ template {
 /*----------------------Anim coche -------------------------*/
 @-webkit-keyframes coche {
   0% {
-    transform: translateX(0);
+    transform: translateX(0px);
   }
   20% {
-    transform: translateX(10);
+    transform: translateX(10px);
   }
   30% {
     transform: translateX(20px);
@@ -1103,10 +1101,10 @@ template {
 }
 @keyframes coche {
   0% {
-    transform: translateX(0);
+    transform: translateX(0px);
   }
   20% {
-    transform: translateX(10);
+    transform: translateX(10px);
   }
   30% {
     transform: translateX(20px);
@@ -1197,7 +1195,7 @@ template {
   stroke-dasharray: 20 20;
   stroke-dashoffset: 10;
   background: -webkit-repeating-linear-gradient(90deg, #ff79da, #9356dc);
-  background: repeating-linear-gradient(90deg #ff79da 50%, #9356dc 50%);
+  background: repeating-linear-gradient(90deg, #ff79da 50%, #9356dc 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1221,19 +1219,19 @@ template {
 
 @keyframes spin {
   0% {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
   100% {
-    rotate: 0deg;
+    transform: rotate(0deg);
     display: none;
   }
 }
 @-webkit-keyframes spin {
   0% {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
   100% {
-    rotate: 0deg;
+    transform: rotate(0deg);
     display: none;
   }
 }
@@ -1248,7 +1246,7 @@ template {
 }
 @-webkit-keyframes spin-2 {
   0% {
-    rotate: 0deg;
+    transform: rotate(0deg);
     transform: rotateY(0deg);
   }
   100% {
@@ -1407,7 +1405,7 @@ hr {
 .card-dish .dish-1, .card-dish .dish-2 {
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: "...";
+  text-overflow: ellipsis;
   display: block;
   padding-bottom: 5px;
   margin: 0;

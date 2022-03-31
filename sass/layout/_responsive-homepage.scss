@@ -165,7 +165,7 @@
     .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{
         display: flex;
         width: 48%;
-        height: 350px;
+        height: 320px;
         margin-bottom: 35px;
         @include box-shadow-desktop;
 
@@ -175,7 +175,7 @@
         }
 
         .sticker-new{
-            height: 290px;
+            height: 240px;
             .new-menu{
                 display: flex;
                 justify-content: center;
@@ -222,7 +222,7 @@
         .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{
             display: flex;
             width: 24%;
-            height: 350px;
+            height: 320px;
             margin-bottom: 35px;
             
     
@@ -232,7 +232,7 @@
             }
     
             .sticker-new{
-                height: 250px;
+                height: 240px;
                 .new-menu{
                     display: flex;
                     justify-content: center;
