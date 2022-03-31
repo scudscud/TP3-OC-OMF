@@ -1,19 +1,17 @@
 @import "base/_typography.scss";
 @import "base/_normalize.scss";
-@import "utils/_mixins-pages.scss";
 @import "utils/_mixins-homepage.scss";
-@import "utils/_variables-homepage.scss";
-@import "utils/_animations.scss";
+@import "pages/_homepage.scss";
 @import "layout/_responsive-pages.scss";
 @import "layout/_responsive-homepage.scss";
-@import "pages/_homepage.scss";
-@import "utils/_functions.scss";
+@import "utils/_variables-homepage.scss";
+@import "utils/_mixins-pages.scss";
 @import "utils/_variables-pages.scss";
 @import "components/_buttons.scss";
-@import "utils/_functions.scss";
 @import "layout/_header.scss";
 @import "layout/_footer.scss";
-
+@import "utils/_functions.scss";
+@import "utils/_animations.scss";
 
 
 a{
