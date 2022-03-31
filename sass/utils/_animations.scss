@@ -447,8 +447,9 @@
     border: 40px solid $secondary;
     border-top-color: $primary;
     border-bottom-color: $tertiary;
+    -moz-animation: spin 5s linear infinite ; 
     -webkit-animation: spin 5s linear infinite ;
-            animation: spin 5s linear infinite ;
+     animation: spin 5s linear infinite ;
 
   }
 
@@ -464,8 +465,8 @@
     border: 40px solid $secondary;
     border-top-color: $primary;
     border-bottom-color: $tertiary;
+    -moz-animation: spin 5s linear infinite ; 
     -webkit-animation: spin 3s linear infinite reverse  ;
-    
     animation: spin 3s linear infinite reverse  ;
     
 }
@@ -510,7 +511,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-   
+    animation: spin-2 5s linear infinite ;
    
    }
   
