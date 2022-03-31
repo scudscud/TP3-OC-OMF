@@ -1,0 +1,202 @@
+@mixin responsive-button-order {
+    
+    @media screen and (min-width: 540px) {
+
+        .button-place-order{
+            .click{
+             width: 300px;
+            }
+         }
+
+    }
+}
+
+@mixin responsive-pages-main {
+
+    @media screen and (min-width: 715px) {
+
+        .top-pic-page{
+            height: 335px;
+       
+        }
+        
+        .main{
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-top: 290px;
+          justify-content: space-between;
+          padding-left: 25px;
+          padding-right: 25px;
+        
+          
+        }
+        .title-page{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: 120%;
+            padding: 36px 0 0 0px ;  
+          }
+          .i-card-p{
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            width: 40px;
+            height: 33px;
+            padding: 0;
+            
+            
+          
+          }
+          .starter, .main-course, .dessert{
+              display: flex;
+              flex-direction: column;
+              width: 48%;
+
+          }
+        
+        .nav-button{
+          padding: 20px 0 50px 0;
+          @include background-grey;
+        }
+
+    }
+
+
+    @media screen and (min-width: 950px) {
+
+        .top-pic-page{
+            height: 500px;
+            top:0;
+        }
+
+        .title-page{
+            justify-content: left;
+
+        }
+        .name-rest{
+            padding-left:35%;
+
+            
+        }
+
+        .main{ 
+          margin-top: 420px;      
+    }
+        .i-card-p{
+        margin-left: 15%;
+        
+        
+      
+      }
+
+
+
+
+    }
+
+    @media screen and (min-width: 1200px) {
+
+        .top-pic-page{
+            height: 500px;
+       
+        }
+        .title-page{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            font-size: 120%;
+            padding: 36px 0 0 15px ;  
+          }
+        .name-rest{
+            padding-left: 15%;
+        }
+        .i-card-p{
+          display: flex;
+             margin: 0;
+            padding-left: 10%;
+
+              color: white;
+              -webkit-text-stroke: 2px #000000;
+              &:hover{
+                -webkit-text-stroke: 2px #000000;
+          
+                  
+              background: $primary;
+              background-position: bottom;
+              background: -webkit-repeating-linear-gradient(0deg,
+              
+                $secondary 20%,
+                $primary 40%
+              );
+              background: -moz-repeating-linear-gradient( 0deg
+                 
+                $secondary 20%,
+                $primary 40%
+              );
+              background: repeating-linear-gradient( 0deg
+               
+                $secondary 20%,
+                $primary 40%
+              );
+              background-position: bottom 0px center;
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              
+              animation: heart 2s ;
+              
+              }
+          
+          
+          }
+        
+        .main{
+          flex-direction: row;
+          flex-wrap: wrap;
+          margin-top: 420px;
+          justify-content: space-between;
+          padding-left: 25px;
+          padding-right: 25px;
+        
+          
+        }
+      
+     
+          .starter, .main-course, .dessert{
+              display: flex;
+              flex-direction: column;
+              width: 32%;
+
+          }
+        
+       
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+}

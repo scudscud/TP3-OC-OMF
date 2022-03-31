@@ -1,0 +1,273 @@
+@media only screen and (min-width: 500px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 250px;
+        padding-bottom: 30px;
+       }
+       .button-nav{
+           display: flex;
+           flex-direction: row;
+           margin: 0;
+            margin-top: 15px;
+            width: 500px;
+            justify-content: center;
+            .button-explore-home{
+            width: 320px;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            height: 60px;
+            background: linear-gradient($secondary,$primary);
+            border-radius: 30px;
+            color: white;
+            @include box-shadow; 
+            &:hover{
+             @include hover-ligthen-boxshadow;
+            }
+    
+            
+           
+        }   
+        }
+}
+
+
+@media only screen and (min-width: 750px){
+    .intro{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 250px;
+     padding-bottom: 30px;
+    }
+    .button-nav{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+         margin-top: 15px;
+         width: 500px;
+         justify-content: center;
+         .button-explore-home{
+         justify-content: center;
+         align-items: center;
+         text-decoration: none;
+         height: 60px;
+         background: linear-gradient($secondary,$primary);
+         border-radius: 30px;
+         color: white;
+         @include box-shadow; 
+         &:hover{
+          @include hover-ligthen-boxshadow;
+         }
+         
+        .span-button-home{
+            font-size: 110%;
+            text-align: center;
+        }
+     }   
+     }
+    
+    .tuto{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 350px;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .tit-fonc{
+            padding-bottom: 15px;
+        }
+
+        .fonc-p1, .fonc-p2,.fonc-p3{
+            justify-content: left;
+            padding-right: 10px;
+            
+            width: 45%;
+               
+        }
+        
+       
+
+    }
+    .resto{
+        padding-top: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tit-resto{
+        padding-bottom: 25px;
+        margin-top: 0;
+        
+    }
+
+    .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{ 
+        width: 48%;   
+        height: 250px; 
+        
+    }
+}
+ 
+  
+ 
+
+@media only screen and (min-width: 1000px){
+
+    .tuto{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 250px;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .tit-fonc{
+            justify-content: center;
+            padding-bottom: 15px;
+        }
+
+        .fonc-p1, .fonc-p2,.fonc-p3{
+            margin: 0;
+            padding-right: 10px;
+            padding-left: 15px;
+            width: 30%;
+               
+        }
+        
+        .num-fonc-tuto{
+            position: absolute;
+            right: 0px;
+        }
+
+    }
+
+    .resto{
+        padding-top: 25px;
+        padding-left: 35px;
+        padding-right: 35px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tit-resto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 25px;
+        margin-top: 0;
+    }
+
+    .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{
+        display: flex;
+        width: 48%;
+        height: 320px;
+        margin-bottom: 35px;
+        @include box-shadow-desktop;
+
+        .pic-main{
+            height: 100%;
+            
+        }
+
+        .sticker-new{
+            height: 240px;
+            .new-menu{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                margin-top: 20px;
+                margin-right: 20px;
+                width: 120px;
+                height: 50px;
+                border-radius: 5px;
+                color: #008766;
+                background-color:$tertiary;  
+                
+            }
+
+        }
+        
+        
+        
+      
+    }
+
+    @media only screen and (min-width: 1600px){
+
+      
+    
+        .resto{
+            padding-top: 25px;
+            padding-left: 35px;
+            padding-right: 35px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .tit-resto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 25px;
+            margin-top: 0;
+        }
+    
+        .card-hp-1,.card-hp-2,.card-hp-3,.card-hp-4{
+            display: flex;
+            width: 24%;
+            height: 320px;
+            margin-bottom: 35px;
+            
+    
+            .pic-main{
+                height: 100%;
+                
+            }
+    
+            .sticker-new{
+                height: 240px;
+                .new-menu{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    margin-top: 20px;
+                    margin-right: 20px;
+                    width: 120px;
+                    height: 50px;
+                    border-radius: 5px;
+                    color: #008766;
+                    background-color:$tertiary;  
+                    
+                }
+    
+            }
+            
+            
+            
+          
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

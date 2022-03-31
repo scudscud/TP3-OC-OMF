@@ -6,24 +6,28 @@
     font-family: "Shrikhand", cursive;
     font-size: 180%;
     @include background-white;
+    
 }
 
 .title-omf{
+    
+    position: relative;
     @include title-omf;
     display: flex;
     height: 65px;
     margin-top: 0;
     margin-bottom: 0;
-    padding-right: 90px;
     font-family: "Shrikhand", cursive;
     font-size: 180%;
     @include background-white;
     align-items: center;
-    justify-content: space-between;
-    padding-right: 35%;
+    justify-content: space-around;
+    padding-right: 30%;
     .i,.a{
         display: flex;
-        padding-left: 12%;
+        align-items: center;
+        justify-content: left;
+        
         text-decoration: none;
         color: black;
  

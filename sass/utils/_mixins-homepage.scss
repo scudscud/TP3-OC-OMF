@@ -1,4 +1,3 @@
-
 /* MIXINS HOMEPAGE VERSION MOBILE */
 @mixin title-omf {
     display: flex;
@@ -16,8 +15,6 @@
 
 }
 
-
-
 @mixin margin-hp {
     margin-left: 20px;
     margin-right: 20px;
@@ -25,9 +22,19 @@
 }
 
 @mixin box-shadow {
-    box-shadow: 0px 7px 5px #e5e5e5; 
+    box-shadow: -10px 10px 2px #e5e5e5; 
     
 }
+
+@mixin box-shadow-desktop {
+    box-shadow : (-10px 30px 10px #dbd9d9);    
+}
+
+@mixin hover-ligthen-boxshadow{
+    filter: brightness(1.2);
+    box-shadow: 10px 7px 7px darken($color:  #e5e5e5, $amount: 30)
+  }
+  
 @mixin background-grey {
     background-color:#f6f6f6 ;
 }
@@ -36,18 +43,20 @@
 @mixin background-white{
     background: #ffffff;
 }
+$background-white : #ffff;
 
+@mixin anim-spawn{
+    animation: spawn-item 2s ;
+    animation-delay: 4s;
 
-@mixin hover-ligthen-boxshadow{
-  filter: brightness(1.2);
-  box-shadow: 0 7px 5px darken($color:  #e5e5e5, $amount: 20)
 }
 
 
 @mixin tuto-card{
     display: flex;
     flex-direction: row;
-    width: 78%;
+    position: relative;
+    width: 75%;
     height: 75px;
     margin: 0 0 20px 10px;
     background: #f6f6f6 ;
@@ -58,12 +67,13 @@
     font-weight: bold;
     &:hover { 
         background: #f5edff;
+        cursor: pointer;
     }
 
-    .number-fonc-tuto{
+    .num-fonc-tuto{
         display: flex;
         position: absolute;
-        left: 20px;
+        left: -10px;
         width: 25px ;
         height: 25px;
         border-radius: 50%;
@@ -73,20 +83,17 @@
         color:#ffff ;
         
     }
-   .fa-list,.fa-store,.i{
+   .fa-list,.fa-store, .fa-mobile-alt{
        display: flex;
        justify-content: center;
        align-items: center;
-       width: 20px;
+       width: 30px;
         padding-left: 15%;
         padding-right: 8%;
         color: #7e7e7e;
             
     }
-    .i-i{
-        height: 50px;
-    }
-    
+   
 
 }
 
@@ -95,12 +102,12 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 250px;
+    height: 245px;
     margin-top: 20px;
     @include box-shadow;
     border-radius: 10px;
     text-decoration: none;
-    &:visited{color: black;};
+    color: black;
 
     .pic-main{
         width: 100%;
@@ -132,47 +139,44 @@
     }
 
     .description{
-        display: grid;
-        grid-template-columns: 80% 20%;
-        padding-left: 15px;
-        @include background-white;
-    }
-    .name-rest{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+       width: 97%;
+       height: 75px;
+        @include background-white;
+        padding: 15px;
+        border-radius: 20px;
         justify-content: space-between;
-        margin-top: 15px;
-        margin-bottom: 0;
-        
+    }
+    .text-description{
+        display: flex;
+       flex-direction: column;
+       width: 100%;
+       justify-content:left;
+       align-items: center;
+       justify-content: space-between;
+      
+       
+
+    }
+
+    .name-rest-hp{
+        display: flex;
+        width: 100%;
+        margin: 0;     
         
     }
     .localisation{
-        padding-top: 7px;
-        margin-bottom: 15px;
-    }
-    .i{
-        width: 25px;
-        height: 40px;
-        padding-top: 25px;
-        padding-left: 10px; 
-         
-    }
-    
-    .fa-heart::before{
         display: flex;
-        width: 50px;
-        height: 50px;
-        background: red;
-
+        width: 100%;
         
-    }
-
-
-
-
-
     
+    }
+    @extend .i-card-heart
+ 
 }
+
+
 
 @mixin resto-card-hp-new-hidden{
     display: flex;
@@ -181,9 +185,9 @@
     height: 250px;
     margin-top: 20px;
     @include box-shadow;
-    border-radius: 10px;
+    border-radius: 20px;
     text-decoration: none;
-    &:visited{color: black;};
+    color: black;
 
     .sticker-new{
         display: flex;
@@ -193,58 +197,52 @@
         justify-content: right;
     }
     .new-menu{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        margin-top: 10px;
-        margin-right: 10px;
-        width: 80px;
-        height: 30px;
-        border-radius: 5px;
-        color: #008766;
-        background-color:$tertiary;  
+        width: 0;
+        height: 0;
         visibility: hidden;
     }
     .pic-main{
         width: 100%;
-        height: 100%;
+        height: 170px;
         object-fit: cover;
         border-radius: 10px 10px 0 0;
 
     }
-    
-    
     .description{
-        display: grid;
-        grid-template-columns: 80% 20%;
-        padding-left: 15px;
-    }
-    .name-rest{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+       width: 97%;
+       height: 75px;
+        @include background-white;
+        padding: 15px;
+        border-radius: 20px;
         justify-content: space-between;
-        margin-top: 15px;
-        margin-bottom: 0;
-        
+    }
+    .text-description{
+        display: flex;
+       flex-direction: column;
+       width: 100%;
+       justify-content:left;
+       align-items: center;
+       justify-content: space-between; 
+
+    }
+
+    .name-rest-hp{
+        display: flex;
+        width: 100%;
+        margin: 0;     
         
     }
     .localisation{
-        padding-top: 7px;
-        margin-bottom: 15px;
-    }
-    .fa-solid{
-        width: 25px;
-        height: 25px;
-        padding-top: 25px;
-        padding-left: 10px;
-        @include background-white;
+        display: flex;
+        width: 100%;
         
-    }
-    .fa-regular.fa-heart::before{
-        width: 25px;
-        height: 25px;
-        
+    
     }
     
+    @extend .i-card-heart
+ 
+    
+
 }

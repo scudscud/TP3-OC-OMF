@@ -1,4 +1,24 @@
+@mixin button-bkg-linear {
+   background:  linear-gradient($secondary,$primary);
+
+}
+
+
+
+@mixin button-box-shadow {
+    box-shadow: 5px 10px 0px #e5e5e5; 
+    
+}
+
+  @mixin button-hover-ligthen-boxshadow{
+    filter: brightness(1.2);
+    box-shadow: 5px 10px 0px darken($color:  #e5e5e5, $amount: 30);
+  }
+
+
+
 .button-nav{
+    
     @include mobile-layout;
      margin-top: 15px;
      .button-explore-home{
@@ -8,26 +28,30 @@
      text-decoration: none;
      width: 65%;
      height: 60px;
-     background: linear-gradient($secondary,$primary);
      border-radius: 30px;
      color: white;
-     @include box-shadow; 
+     @include button-bkg-linear;
+     @include button-box-shadow; 
+     
      &:hover{
-      @include hover-ligthen-boxshadow;
-      
-   
+      @include button-hover-ligthen-boxshadow;
+     
      }
+
+    
      
     .span-button-home{
         font-size: 110%;
         text-align: center;
     }
+
  }   
  }
 
  .button-place-order{
     @include mobile-layout;
     height: 100%;
+    
     .click{
         display: flex;
      justify-content: center;
@@ -38,12 +62,10 @@
      background: linear-gradient($secondary,$primary);
      border-radius: 30px;
      color: white;
-     @include box-shadow; 
+     @include button-box-shadow ; 
      &:hover{
-      @include hover-ligthen-boxshadow;
+      @include button-hover-ligthen-boxshadow;
       
-      
-   
      }
      
     .span-button-order{
@@ -52,9 +74,9 @@
     }
 
     }
+   
 
-
-
+   
 
 
 
