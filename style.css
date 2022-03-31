@@ -1139,8 +1139,8 @@ template {
   flex-direction: row;
   width: 100%;
   height: 100%;
-  -webkit-animation: load-out 100s forwards;
-  animation: load-out 100s forwards;
+  -webkit-animation: load-out 3s forwards;
+  animation: load-out 3s forwards;
 }
 
 .un {
@@ -1258,8 +1258,8 @@ template {
   0% {
     opacity: 1;
   }
-  99% {
-    opacity: 1;
+  95% {
+    opacity: 0.9;
     z-index: 100;
   }
   100% {
@@ -1271,8 +1271,8 @@ template {
   0% {
     opacity: 1;
   }
-  99% {
-    opacity: 1;
+  95% {
+    opacity: 0.9;
     z-index: 100;
   }
   100% {
