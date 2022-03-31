@@ -906,7 +906,17 @@ template {
   }
 }
 /*-------------------------------SPAWN--------------------------------------*/
-.spawn-meal, .dessert, .main-course, .starter {
+.spawn-meal-1, .starter {
+  -webkit-animation: spawn-item 0.5s;
+  animation: spawn-item 0.5s;
+}
+
+.spawn-meal-2, .main-course {
+  -webkit-animation: spawn-item 1.5s;
+  animation: spawn-item 1.5s;
+}
+
+.spawn-meal-3, .dessert {
   -webkit-animation: spawn-item 2.5s;
   animation: spawn-item 2.5s;
 }

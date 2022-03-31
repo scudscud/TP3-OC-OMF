@@ -143,13 +143,23 @@
   
 /*-------------------------------SPAWN--------------------------------------*/
 
+  .spawn-meal-1{
+    -webkit-animation: spawn-item 0.5s;
+            animation: spawn-item 0.5s;
+  }
   
-   .spawn-meal{
+  .spawn-meal-2{
+    -webkit-animation: spawn-item 1.5s;
+            animation: spawn-item 1.5s;
+
+  }
+
+  .spawn-meal-3{
     -webkit-animation: spawn-item 2.5s;
-    animation: spawn-item 2.5s;
-   }
-
-
+            animation: spawn-item 2.5s;
+  }
+  
+  
  /*-------------------------COCHE--------------------*/
 
 

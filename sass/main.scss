@@ -93,9 +93,18 @@ a{
  margin-top: 40px;
 
 }
-.dessert,.main-course,.starter{
-  @extend .spawn-meal;
+.starter{
+  @extend .spawn-meal-1;
 }
+
+.main-course{
+  @extend .spawn-meal-2;
+}
+
+.dessert{
+  @extend .spawn-meal-3;
+}
+
 
 hr{
   text-align: left;
