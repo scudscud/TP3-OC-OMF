@@ -73,7 +73,22 @@
     }
         .i-card-p{
         margin-left: 15%;
+        &:hover{
+          -webkit-text-stroke: 2px #000000;
+    
+            
+        background: $primary;
+        background-position: bottom;
+        background: -webkit-repeating-linear-gradient(45deg,$secondary ,$primary );
+        background: -moz-repeating-linear-gradient( 90deg  $secondary ,$primary );
+        background: repeating-linear-gradient( 90deg,$secondary ,$primary );
+        background-position: bottom 0px center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: heart 2s ;
         
+        }
         
       
       }
@@ -112,26 +127,13 @@
                   
               background: $primary;
               background-position: bottom;
-              background: -webkit-repeating-linear-gradient(0deg,
-              
-                $secondary 20%,
-                $primary 40%
-              );
-              background: -moz-repeating-linear-gradient( 0deg
-                 
-                $secondary 20%,
-                $primary 40%
-              );
-              background: repeating-linear-gradient( 0deg
-               
-                $secondary 20%,
-                $primary 40%
-              );
+              background: -webkit-repeating-linear-gradient(0deg,$secondary 20%,$primary 40%);
+              background: -moz-repeating-linear-gradient( 0deg, $secondary 20%,$primary 40%);
+              background: repeating-linear-gradient( 0deg $secondary 20%,$primary 40%);
               background-position: bottom 0px center;
               background-clip: text;
               -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              
+              -webkit-text-fill-color: transparent; 
               animation: heart 2s ;
               
               }
