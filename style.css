@@ -1296,6 +1296,7 @@ template {
 /*-------------------loader----------------*/
 .body-load {
   z-index: 100;
+  position: relative;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -1309,8 +1310,11 @@ template {
   animation: load-out 100s forwards;
 }
 
+.test-fixe {
+  position: absolute;
+}
+
 .un {
-  position: relative;
   z-index: 110;
   display: flex;
   width: 220px;
@@ -1354,9 +1358,10 @@ template {
 .i-l {
   z-index: 120;
   position: relative;
-  right: 31%;
-  display: flex;
-  font-size: 50%;
+  transform-origin: 15px 40px;
+  right: -135px;
+  bottom: 165px;
+  font-size: 100%;
   -webkit-text-stroke: 2px white;
   stroke-dasharray: 20 20;
   stroke-dashoffset: 10;
@@ -1369,10 +1374,8 @@ template {
 }
 
 .i-l::before {
-  font-size: 500%;
+  font-size: 200%;
   -webkit-text-stroke: 2px white;
-  stroke-dasharray: 20 20;
-  stroke-dashoffset: 10;
   background: -webkit-repeating-linear-gradient(90deg, #ff79da, #9356dc);
   background: repeating-linear-gradient(90deg #ff79da 50%, #9356dc 50%);
   background-clip: text;
@@ -1400,11 +1403,9 @@ template {
 }
 @keyframes spin-2 {
   0% {
-    transform: rotate(360deg);
     transform: rotateY(0deg);
   }
   100% {
-    transform: rotate(0deg);
     transform: rotateY(360deg);
     display: none;
   }
