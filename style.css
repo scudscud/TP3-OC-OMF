@@ -428,6 +428,17 @@ template {
   text-decoration: none;
   color: black;
 }
+.card-hp-1 .card-hp-main, .card-hp-2 .card-hp-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 245px;
+  margin-top: 20px;
+  box-shadow: -10px 10px 2px #e5e5e5;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+}
 .card-hp-1 .pic-main, .card-hp-2 .pic-main {
   width: 100%;
   height: 170px;
@@ -483,7 +494,6 @@ template {
 }
 .card-hp-1 .i-card, .card-hp-2 .i-card {
   cursor: pointer;
-  display: block;
   justify-content: center;
   align-content: center;
   padding-right: 30px;
@@ -1295,8 +1305,8 @@ template {
   flex-direction: row;
   width: 100%;
   height: 100%;
-  -webkit-animation: load-out 3s forwards;
-  animation: load-out 3s forwards;
+  -webkit-animation: load-out 100s forwards;
+  animation: load-out 100s forwards;
 }
 
 .un {
@@ -1310,7 +1320,7 @@ template {
   border: 40px solid #ff79da;
   border-top-color: #9356dc;
   border-bottom-color: #99e2d0;
-  animation: spin 5s linear infinite reverse;
+  animation: spin 3s linear infinite reverse;
 }
 
 .de {
@@ -1322,7 +1332,7 @@ template {
   border: 40px solid #ff79da;
   border-top-color: #9356dc;
   border-bottom-color: #99e2d0;
-  animation: spin 3s linear infinite;
+  animation: spin 2s linear infinite;
 }
 
 .de- {
@@ -1338,10 +1348,13 @@ template {
   border: 40px solid #ff79da;
   border-top-color: #9356dc;
   border-bottom-color: #99e2d0;
-  animation: spin 3s linear infinite reverse;
+  animation: spin 2s linear infinite reverse;
 }
 
 .i-l {
+  z-index: 120;
+  position: relative;
+  right: 31%;
   display: flex;
   font-size: 50%;
   -webkit-text-stroke: 2px white;
@@ -1352,12 +1365,10 @@ template {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: spin-2 5s linear infinite;
+  animation: spin-2 3s linear infinite;
 }
 
 .i-l::before {
-  z-index: 150;
-  display: flex;
   font-size: 500%;
   -webkit-text-stroke: 2px white;
   stroke-dasharray: 20 20;
