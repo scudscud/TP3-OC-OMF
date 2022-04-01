@@ -461,7 +461,6 @@
 
  .body-load{
    z-index: 100;
-   position: relative;
    position: fixed;
    display: flex;
    justify-content: center;
@@ -471,16 +470,12 @@
    flex-direction: row;
    width: 100%;
    height: 100%;
-  
-   -webkit-animation: load-out 100s forwards;
-  
-           animation: load-out 100s forwards;
+   -webkit-animation: load-out 3s forwards;
+           animation: load-out 3s forwards;
  }
 
   .test-fixe{
-    position: absolute;
-
-
+    position: relative;
 
   }
  .un{ 
@@ -537,10 +532,10 @@
 
    .i-l{
      z-index: 120;
-     position: relative;
+     position: absolute;
      transform-origin: 15px 40px;
-     right: -135px;
-     bottom: 165px;
+     right: 137px;
+     bottom: 135px;
     font-size: 100%;
     -webkit-text-stroke: 2px white;
     stroke-dasharray: 20 20;
