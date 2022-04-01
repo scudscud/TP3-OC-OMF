@@ -1053,7 +1053,7 @@ template {
   height: 55%;
   align-items: flex-end;
   padding-right: 6%;
-  animation: coche reverse ease-in-out 1s;
+  animation: coche reverse ease-in-out 0.5s;
 }
 .card-dish-animation .i-c-g, .card-dish:hover .i-c-g {
   cursor: pointer;
@@ -1064,7 +1064,7 @@ template {
   background: #99e2d0;
   width: 70px;
   height: 70px;
-  animation: coche reverse ease-in-out 1s;
+  animation: coche reverse ease-in-out 0.5s;
 }
 .card-dish-animation .i-coche, .card-dish:hover .i-coche {
   visibility: visible;
@@ -1072,7 +1072,7 @@ template {
   color: white;
   background: #99e2d0;
   transform: rotate(-360deg);
-  transition: 1s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 /*
