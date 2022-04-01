@@ -1495,6 +1495,11 @@ hr {
   }
 }
 @media screen and (min-width: 950px) {
+  .body-pages {
+    width: 100%;
+    height: auto;
+  }
+
   .top-pic-page {
     height: 500px;
     top: 0;
@@ -1509,7 +1514,7 @@ hr {
   }
 
   .main {
-    margin-top: 420px;
+    margin-top: 440px;
   }
 
   .i-card-p {
@@ -1531,7 +1536,17 @@ hr {
 }
 @media screen and (min-width: 1200px) {
   .top-pic-page {
-    height: 500px;
+    height: 520px;
+  }
+
+  .main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 480px;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
   }
 
   .title-page {
@@ -1559,21 +1574,12 @@ hr {
     background-position: bottom;
     background: -webkit-repeating-linear-gradient(0deg, #ff79da 20%, #9356dc 40%);
     background: -moz-repeating-linear-gradient(0deg, #ff79da 20%, #9356dc 40%);
-    background: repeating-linear-gradient(0deg, #ff79da 20%, #9356dc 40%);
+    background: repeating-linear-gradient(0deg, #ff79da, #9356dc);
     background-position: bottom 0px center;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: heart 2s;
-  }
-
-  .main {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 420px;
-    justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
   }
 
   .starter, .main-course, .dessert {
