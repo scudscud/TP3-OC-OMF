@@ -26,10 +26,13 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: heart 2s ;
-   
+      animation: heart 4s ease-in-out forwards ;  
 
 }
+
+
+
+
 /*-----------------anim empty-------------*/
 @-webkit-keyframes heart{
     from{ 
@@ -102,7 +105,6 @@
   /*--------------------spwan-item--------------------------*/
 
 
-
 @-webkit-keyframes spawn-item  {
   
   0% {
@@ -119,8 +121,6 @@
   }
    
 }
-
-
 
 @keyframes spawn-item  {
   
@@ -202,157 +202,6 @@
     
     }
   
-
-/*
-  .card-dish{ 
-    cursor: pointer;
-    .i-c-g{
-      
-      display: flex;
-      align-items:center ;
-      justify-content: center;
-      border-radius: 0px 15px 15px 0px;
-      background: $tertiary;
-      width: 0px;
-      height: 70px;
-      
-    }
-    .i-coche{
-
-      visibility: hidden;
-      color: $tertiary;
-      background: $tertiary;
-      
-    }
-    
-  
-    :hover{
-
-       
-      .dish-text{
-        display: block;
-        white-space: nowrap;
-        overflow:hidden;
-        text-overflow: ellipsis;
-        flex-direction: column;
-        width: 80%;
-        justify-content: space-between;
-        padding-left: 15px;
-        
-      }
-      .dish-1,.dish2{
-        display: block;
-        white-space: nowrap;
-        overflow:hidden;
-        text-overflow: ellipsis;
-        padding-bottom: 5px;
-        margin:0;
-  
-      }
-      .price{
-        
-        white-space: nowrap;
-        overflow:hidden;
-        text-overflow: ellipsis;
-        height: 55%;
-        align-items: flex-end;
-        padding-right: 6%;   
-        animation: coche reverse ease-in-out 1s ;
-        
-      }
-
-      .i-c-g{
-      cursor: pointer;
-      display: flex;
-      align-items:center ;
-      justify-content: center;
-      border-radius: 0px 15px 15px 0px;
-      background: $tertiary;
-      width: 70px;
-      height: 70px;
-      animation: coche reverse ease-in-out 1s ;
-      
-    }
-
-    .i-coche{
-    visibility: visible;
-    display:flex;
-    color: white;
-    background: $tertiary;
-   transform: rotate(-360deg) ;
-    transition: 1s ease-in-out ; 
-    
-    }
-    
-  }
-  /*
-  &:hover{
-
-    .dish-text{
-      display: block;
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-      flex-direction: column;
-      width: 80%;
-      justify-content: space-between;
-      padding-left: 15px;
-      
-    }
-    .dish-1,.dish2{
-      display: block;
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-      padding-bottom: 5px;
-      margin:0;
-
-    }
-    .price{
-      
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-      height: 55%;
-      align-items: flex-end;
-      padding-right: 15px;
-      animation: coche reverse ease-in-out 0.5s ;
-      animation-fill-mode: backwards;
-    }
-
-    .i-c-g{
-    cursor: pointer;
-    display: flex;
-    align-items:center ;
-    justify-content: center;
-    border-radius: 0px 15px 15px 0px;
-    background: $tertiary;
-    width: 70px;
-    height: 70px;
-    animation: coche reverse ease-in-out 0.5s ;
-    animation-fill-mode: backwards;
-
-  }
-
-  .i-coche{
-  visibility: visible;
-  display:flex;
-  color: white;
-  background: $tertiary;
- transform: rotate(-360deg) ;
-  transition: 0.8s ease-in-out ; 
-  animation-fill-mode: backwards;
- 
-  }
-  
-
-
-  }
-
- */
-
- 
-
 
 /*
   @keyframes testtranslate{

@@ -32,7 +32,22 @@
             width: 40px;
             height: 33px;
             padding: 0;
+            &:hover{
+              -webkit-text-stroke: 2px #000000;
+        
+                
+            background: $primary;
+            background-position: bottom;
+            background: -webkit-repeating-linear-gradient(45deg,$secondary ,$primary );
+            background: -moz-repeating-linear-gradient( 90deg  $secondary ,$primary );
+            background: repeating-linear-gradient( 90deg,$secondary ,$primary );
+            background-position: bottom 0px center;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: heart 2s ;
             
+            }
             
           
           }
