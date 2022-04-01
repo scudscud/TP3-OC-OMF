@@ -1,16 +1,16 @@
 
 /*--------------------HEART-----------------------*/
 .i-card-heart-animation{
-        -webkit-text-stroke: 2px #000000;
-    background: $primary;
+    -webkit-text-stroke: 2px #000000;
+    background: $primary ;
     background-position: bottom;
-    background: -webkit-repeating-linear-gradient(0deg,$secondary ,$primary );
-    background: repeating-linear-gradient( 0deg $secondary 50%,$primary 50%);
+    background: -webkit-repeating-linear-gradient(0deg, $secondary, $primary);
+    background: repeating-linear-gradient(0deg, $secondary 50%, $primary 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
     -webkit-animation: heart  3s ease-in-out forwards;
-    animation: heart  3s ease-in-out forwards; 
+    animation: heart  2s ease-in-out forwards; 
     
     }
      
@@ -19,14 +19,14 @@
       -webkit-text-stroke: 2px #000000;
       background: $primary;
       background-position: bottom;
-      background: -webkit-repeating-linear-gradient(45deg,$secondary ,$primary );
-      background: -moz-repeating-linear-gradient( 90deg  $secondary ,$primary );
-      background: repeating-linear-gradient( 90deg,$secondary ,$primary );
+      background: -webkit-repeating-linear-gradient(45deg, $secondary,$primary );
+      background: -moz-repeating-linear-gradient(90deg,  $secondary, $primary);
+      background: repeating-linear-gradient(90deg, $secondary, $primary);
       background-position: bottom 0px center;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: heart 4s ease-in-out forwards ;  
+      animation: heart 2s ease-in-out forwards ;  
 
 }
 
@@ -389,8 +389,8 @@
     -webkit-text-stroke: 2px white;
     stroke-dasharray: 20 20;
     stroke-dashoffset: 10;
-    background: -webkit-repeating-linear-gradient(90deg,$secondary ,$primary );
-    background: repeating-linear-gradient(90deg,$secondary 50%,$primary 50%);
+    background: -webkit-repeating-linear-gradient(90deg ,$secondary, $primary);
+    background: repeating-linear-gradient(90deg, $secondary 50%, $primary 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -403,8 +403,8 @@
    .i-l::before{
     font-size: 200%;
     -webkit-text-stroke: 2px white;
-    background: -webkit-repeating-linear-gradient(90deg,$secondary ,$primary );
-    background: repeating-linear-gradient(90deg $secondary 50%, $primary 50% );
+    background: -webkit-repeating-linear-gradient(90deg, $secondary ,$primary);
+    background: repeating-linear-gradient(90deg, $secondary 50%, $primary 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

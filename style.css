@@ -930,12 +930,12 @@ template {
   background: #9356dc;
   background-position: bottom;
   background: -webkit-repeating-linear-gradient(0deg, #ff79da, #9356dc);
-  background: repeating-linear-gradient(0deg #ff79da 50%, #9356dc 50%);
+  background: repeating-linear-gradient(0deg, #ff79da 50%, #9356dc 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: heart 3s ease-in-out forwards;
-  animation: heart 3s ease-in-out forwards;
+  animation: heart 2s ease-in-out forwards;
 }
 
 .i-card-p-animation, .i-card-p:hover {
@@ -943,13 +943,13 @@ template {
   background: #9356dc;
   background-position: bottom;
   background: -webkit-repeating-linear-gradient(45deg, #ff79da, #9356dc);
-  background: -moz-repeating-linear-gradient(90deg #ff79da, #9356dc);
+  background: -moz-repeating-linear-gradient(90deg, #ff79da, #9356dc);
   background: repeating-linear-gradient(90deg, #ff79da, #9356dc);
   background-position: bottom 0px center;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: heart 4s ease-in-out forwards;
+  animation: heart 2s ease-in-out forwards;
 }
 
 /*-----------------anim empty-------------*/
@@ -1232,7 +1232,7 @@ template {
   font-size: 200%;
   -webkit-text-stroke: 2px white;
   background: -webkit-repeating-linear-gradient(90deg, #ff79da, #9356dc);
-  background: repeating-linear-gradient(90deg #ff79da 50%, #9356dc 50%);
+  background: repeating-linear-gradient(90deg, #ff79da 50%, #9356dc 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1559,7 +1559,7 @@ hr {
     background-position: bottom;
     background: -webkit-repeating-linear-gradient(0deg, #ff79da 20%, #9356dc 40%);
     background: -moz-repeating-linear-gradient(0deg, #ff79da 20%, #9356dc 40%);
-    background: repeating-linear-gradient(0deg #ff79da 20%, #9356dc 40%);
+    background: repeating-linear-gradient(0deg, #ff79da 20%, #9356dc 40%);
     background-position: bottom 0px center;
     background-clip: text;
     -webkit-background-clip: text;
