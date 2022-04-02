@@ -21,12 +21,13 @@
     font-size: 180%;
     @include background-white;
     align-items: center;
-    justify-content: space-around;
-    padding-right: 30%;
+    justify-content: center;
+    
     .i,.a{
         display: flex;
         align-items: center;
-        justify-content: left;
+        position: absolute;
+        left: 25px;
         
         text-decoration: none;
         color: black;
