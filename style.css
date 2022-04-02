@@ -1028,7 +1028,74 @@ template {
   }
 }
 /*-------------------------COCHE--------------------*/
-.card-dish-animation .dish-text, .card-dish:hover .dish-text {
+.card-dish-animation, .card-dish {
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  height: 70px;
+  width: 100%;
+  box-shadow: -10px 10px 2px #e5e5e5;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-dish-animation .dish-text, .card-dish .dish-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  flex-direction: column;
+  width: 80%;
+  justify-content: space-between;
+  padding-left: 15px;
+}
+.card-dish-animation .dish-1, .card-dish .dish-1, .card-dish-animation .dish-2, .card-dish .dish-2 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  padding-bottom: 5px;
+  margin: 0;
+}
+.card-dish-animation .price, .card-dish .price {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-wrap: nowrap;
+  display: flex;
+  height: 55%;
+  align-items: flex-end;
+  padding-right: 4%;
+  padding-left: 20px;
+  transform: translateX(0px);
+  transition: 1s linear;
+}
+.card-dish-animation .i-c-g, .card-dish .i-c-g {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 15px 15px 0px;
+  background: #99e2d0;
+  width: 0px;
+  height: 70px;
+  transform-origin: right;
+  transform: translateX(0);
+  transition: 1s linear;
+}
+.card-dish-animation .i-coche, .card-dish .i-coche {
+  font-size: 100%;
+  background: white;
+  color: white;
+  background: #99e2d0;
+  transform: rotate(0deg);
+  opacity: 0;
+  transition: 1s linear;
+}
+.card-dish-animation:hover .dish-text, .card-dish:hover .dish-text {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -1038,7 +1105,7 @@ template {
   justify-content: space-between;
   padding-left: 15px;
 }
-.card-dish-animation .dish-1, .card-dish:hover .dish-1, .card-dish-animation .dish2, .card-dish:hover .dish2 {
+.card-dish-animation:hover .dish-1, .card-dish:hover .dish-1, .card-dish-animation:hover .dish2, .card-dish:hover .dish2 {
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -1046,33 +1113,36 @@ template {
   padding-bottom: 5px;
   margin: 0;
 }
-.card-dish-animation .price, .card-dish:hover .price {
+.card-dish-animation:hover .price, .card-dish:hover .price {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   height: 55%;
   align-items: flex-end;
-  padding-right: 6%;
-  animation: coche reverse ease-in-out 0.5s;
+  padding-left: 20px;
+  transform: translateX(-10px);
+  transition: 1s linear;
 }
-.card-dish-animation .i-c-g, .card-dish:hover .i-c-g {
+.card-dish-animation:hover .i-c-g, .card-dish:hover .i-c-g {
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0px 15px 15px 0px;
   background: #99e2d0;
-  width: 70px;
+  width: 80px;
   height: 70px;
-  animation: coche reverse ease-in-out 0.5s;
+  transform: translateX(1);
+  transition: 1s linear;
 }
-.card-dish-animation .i-coche, .card-dish:hover .i-coche {
-  visibility: visible;
+.card-dish-animation:hover .i-coche, .card-dish:hover .i-coche {
+  font-size: 100%;
   display: flex;
   color: white;
   background: #99e2d0;
-  transform: rotate(-360deg);
-  transition: 0.7s ease-in-out;
+  transform: rotate(360deg);
+  transition: 0.7s linear;
+  opacity: 1;
 }
 
 /*
@@ -1382,59 +1452,6 @@ hr {
   border: none;
 }
 
-.card-dish {
-  cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  height: 70px;
-  width: 100%;
-  box-shadow: -10px 10px 2px #e5e5e5;
-  background: #ffffff;
-  border-radius: 20px;
-  margin-bottom: 15px;
-  align-items: center;
-  justify-content: space-between;
-}
-.card-dish .dish-text {
-  display: inline-block;
-  flex-direction: column;
-  width: 80%;
-  justify-content: space-between;
-  padding-left: 15px;
-}
-.card-dish .dish-1, .card-dish .dish-2 {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: block;
-  padding-bottom: 5px;
-  margin: 0;
-}
-.card-dish .price {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  flex-wrap: nowrap;
-  display: flex;
-  height: 55%;
-  align-items: flex-end;
-}
-.card-dish .i-c-g {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0px 15px 15px 0px;
-  background: #99e2d0;
-  width: 0px;
-  height: 70px;
-}
-.card-dish .i-coche {
-  visibility: hidden;
-  color: #99e2d0;
-  background: #99e2d0;
-}
 .nav-button {
   padding: 20px 0 50px 0;
 }

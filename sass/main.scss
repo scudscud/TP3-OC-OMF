@@ -121,74 +121,9 @@ hr{
   background: $tertiary;
   border: none;
 }
-  
-  .card-dish{
-   
-    cursor: pointer;
-    white-space: nowrap;
-        overflow:hidden;
-        text-overflow: ellipsis;
-    display:flex;
-    height: 70px;
-    width: 100%;
-    @include box-shadow;
-    @include background-white;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    align-items: center;
-    justify-content: space-between;
-  
-    .dish-text{
-     display: inline-block;
-      flex-direction: column;
-      width: 80%;
-      justify-content: space-between;
-      padding-left: 15px;
-      
-    }
-    .dish-1,.dish-2{
-      
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-      display: block;
-      padding-bottom: 5px;
-      margin:0;
-
-    }
-    .price{
-      white-space: nowrap;
-      overflow:hidden;
-      text-overflow: ellipsis;
-      flex-wrap: nowrap;
-      display: flex;
-      height: 55%;
-      align-items: flex-end;
-    }
-    .i-c-g{
-      
-      display: flex;
-      align-items:center ;
-      justify-content: center;
-      border-radius: 0px 15px 15px 0px;
-      background: $tertiary;
-      width: 0px;
-      height: 70px;
-      
-    }
-    .i-coche{
-
-      visibility: hidden;
-      color: $tertiary;
-      background: $tertiary;
-
-      
-    }
-    &:hover{
-      @extend .card-dish-animation;
-    }
-  }
-
+.card-dish{
+  @extend .card-dish-animation;
+}
 .nav-button{
   padding: 20px 0 50px 0;
 }
