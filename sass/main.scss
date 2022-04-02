@@ -76,7 +76,7 @@ a{
   padding-right: 5%;
   color: white;
     -webkit-text-stroke: 2px #000000;
-  &:hover{
+  &:checked{
     @extend .i-card-p-animation ;
   
   }

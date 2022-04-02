@@ -4,12 +4,12 @@
     -webkit-text-stroke: 2px #000000;
     background: $primary ;
     background-position: bottom;
-    background: -webkit-repeating-linear-gradient(0deg, $secondary, $primary);
-    background: repeating-linear-gradient(0deg, $secondary 50%, $primary 50%);
+    background: -webkit-repeating-linear-gradient(45deg, $secondary, $primary);
+    background: repeating-linear-gradient(45deg, $secondary, $primary);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
-    -webkit-animation: heart  3s ease-in-out forwards;
+    -webkit-animation: heart  2s ease-in-out forwards;
     animation: heart  2s ease-in-out forwards; 
     
     }
@@ -26,7 +26,8 @@
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: heart 2s ease-in-out forwards ;  
+      animation: heart 2s linear ; 
+      
 
 }
 
