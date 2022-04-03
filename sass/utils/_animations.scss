@@ -326,29 +326,19 @@
       transform: translateX(40px);
   }
    60%{
-
     transform: translateX(50px);
    }
  
-   80%{ transform: translateX(60px);
-    
+   80%{ transform: translateX(60px); 
 
-   }
-
-  
+   } 
    100%{
-
     transform: translateX(70px);
-    
-    
-
-
    }
   }
   @keyframes coche{
     0% {
       transform: translateX(0px);
-    
     }
     20% {
       transform: translateX(10px); 
@@ -366,20 +356,11 @@
 
     transform: translateX(50px);
    }
- 
-   80%{ transform: translateX(60px);
-    
-
+   80%{ transform: translateX(60px);  
    }
-
-  
    100%{
 
     transform: translateX(70px);
-    
-    
-
-
    }
   }
 
@@ -426,9 +407,7 @@
   }
 
  .de{
-   
-    
-    
+  
    display: flex;
     width: 140px;
     height: 140px;
@@ -455,7 +434,6 @@
   border: 40px solid $secondary;
   border-top-color: $primary;
   border-bottom-color: $tertiary;
- 
  animation: spin 2s linear infinite reverse ;
   
   
@@ -480,8 +458,6 @@
     animation: spin-2 3s linear infinite   ;
    
    }
-  
- 
 
    .i-l::before{
     font-size: 200%;
@@ -491,12 +467,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
-   
+
    }
- 
-
-
 
 @keyframes spin {
  0% {
@@ -521,8 +493,7 @@
   display: none;
  }
  
- }
- 
+ } 
 
 @keyframes spin-2 {
   0% { 
@@ -566,16 +537,10 @@
   100%{
    opacity: 0;
    z-index: -100;
-   
-   
-  
  
   }
 }
- 
-
-
-@keyframes load-out {
+ @keyframes load-out {
   0%{
     opacity: 1;
 
@@ -587,9 +552,6 @@
   100%{
    opacity: 0;
    z-index: -100;
-   
-   
-  
  
   }
 }
