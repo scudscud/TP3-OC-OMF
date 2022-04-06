@@ -9,8 +9,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
-    -webkit-animation: heart  3s ease-in-out forwards;
-    animation: heart  2s ease-in-out forwards; 
+    -webkit-animation: heart  1s ease-in-out forwards;
+    animation: heart  1s ease-in-out forwards; 
     
     }
      
@@ -19,14 +19,14 @@
       -webkit-text-stroke: 2px #000000;
       background: $primary;
       background-position: bottom;
-      background: -webkit-repeating-linear-gradient(45deg, $secondary,$primary );
-      background: -moz-repeating-linear-gradient(45deg,  $secondary, $primary);
-      background: repeating-linear-gradient(45deg, $secondary, $primary);
+      background: -webkit-repeating-linear-gradient(0deg, $secondary,$primary );
+      background: -moz-repeating-linear-gradient(0deg,  $secondary, $primary);
+      background: repeating-linear-gradient(0deg, $secondary, $primary);
       background-position: bottom 0px center;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: heart 2s ease-in-out forwards ;  
+      animation: heart 1s ease-in-out forwards ;  
 
 }
 
@@ -191,7 +191,7 @@
     padding-right: 4%;
     padding-left:20px ;
     transform: translateX(0px) ;
-    transition: 1s linear;
+    transition: 0.5s linear;
   }
   .i-c-g{
     
@@ -204,7 +204,7 @@
     height: 70px;
     transform-origin: right;
     transform: translateX(0);
-    transition: 1s linear;
+    transition: 0.5s linear;
     
   }
   .i-coche{
@@ -214,7 +214,7 @@
     background: $tertiary;
     transform: rotate(0deg);
     opacity: 0;
-    transition: 1s linear;
+    transition: 0.5s linear;
     
 
     
@@ -250,8 +250,8 @@
         height: 55%;
         align-items: flex-end;
         padding-left: 20px;
-        transform: translateX(-10px) ;
-        transition: 1s linear;
+        transform: translateX(0px) ;
+        transition: 0.5s linear;
         
       }
 
@@ -265,7 +265,7 @@
       width: 80px;
       height: 70px;
       transform: translateX(1);
-      transition: 1s linear;
+      transition: 0.5s linear;
       
     }
 
@@ -275,7 +275,7 @@
     color: white;
     background: $tertiary;
     transform: rotate(360deg) ;
-    transition: 0.7s linear;
+    transition: 0.5s linear;
     opacity: 1;
     
     

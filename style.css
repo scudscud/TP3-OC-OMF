@@ -302,7 +302,7 @@ template {
   margin: 0 0 20px 10px;
   background: #f6f6f6;
   border-radius: 20px;
-  box-shadow: -10px 10px 2px #e5e5e5;
+  box-shadow: 5px 5px 2px #e5e5e5;
   padding-right: 20%;
   justify-content: left;
   font-weight: bold;
@@ -355,7 +355,7 @@ template {
   width: 100%;
   height: 250px;
   margin-top: 20px;
-  box-shadow: -10px 10px 2px #e5e5e5;
+  box-shadow: 5px 5px 2px #e5e5e5;
   border-radius: 20px;
   text-decoration: none;
   color: black;
@@ -381,11 +381,11 @@ template {
 .card-hp-3 .description, .card-hp-4 .description {
   display: flex;
   flex-direction: row;
-  width: 97%;
+  width: 92%;
   height: 75px;
   background: #ffffff;
   padding: 15px;
-  border-radius: 20px;
+  border-radius: 0px 0px 20px 20px;
   justify-content: space-between;
 }
 .card-hp-3 .text-description, .card-hp-4 .text-description {
@@ -410,7 +410,7 @@ template {
   display: block;
   justify-content: center;
   align-content: center;
-  padding-right: 30px;
+  padding-right: 10px;
   padding-top: 5px;
   width: 33px;
   height: 31px;
@@ -424,18 +424,7 @@ template {
   width: 100%;
   height: 245px;
   margin-top: 20px;
-  box-shadow: -10px 10px 2px #e5e5e5;
-  border-radius: 10px;
-  text-decoration: none;
-  color: black;
-}
-.card-hp-1 .card-hp-main, .card-hp-2 .card-hp-main {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 245px;
-  margin-top: 20px;
-  box-shadow: -10px 10px 2px #e5e5e5;
+  box-shadow: 5px 5px 2px #e5e5e5;
   border-radius: 10px;
   text-decoration: none;
   color: black;
@@ -469,11 +458,11 @@ template {
 .card-hp-1 .description, .card-hp-2 .description {
   display: flex;
   flex-direction: row;
-  width: 97%;
+  width: 92%;
   height: 75px;
   background: #ffffff;
   padding: 15px;
-  border-radius: 20px;
+  border-radius: 0px 0px 20px 20px;
   justify-content: space-between;
 }
 .card-hp-1 .text-description, .card-hp-2 .text-description {
@@ -497,7 +486,7 @@ template {
   cursor: pointer;
   justify-content: center;
   align-content: center;
-  padding-right: 30px;
+  padding-right: 10px;
   padding-top: 5px;
   width: 33px;
   height: 31px;
@@ -567,7 +556,7 @@ template {
     background: linear-gradient(#ff79da, #9356dc);
     border-radius: 30px;
     color: white;
-    box-shadow: -10px 10px 2px #e5e5e5;
+    box-shadow: 5px 5px 2px #e5e5e5;
   }
   .button-nav .button-explore-home:hover {
     filter: brightness(1.2);
@@ -658,7 +647,7 @@ template {
     width: 48%;
     height: 320px;
     margin-bottom: 35px;
-    box-shadow: -10px 30px 10px #dbd9d9;
+    box-shadow: 5px 10px 10px #dbd9d9;
   }
   .card-hp-1 .pic-main, .card-hp-2 .pic-main, .card-hp-3 .pic-main, .card-hp-4 .pic-main {
     height: 100%;
@@ -746,11 +735,11 @@ template {
   border-radius: 30px;
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 5px 10px 0px #e5e5e5;
+  box-shadow: 5px 7px 0px #e5e5e5;
 }
 .button-nav .button-explore-home:hover {
   filter: brightness(1.2);
-  box-shadow: 5px 10px 0px #999999;
+  box-shadow: 5px 7px 0px #999999;
 }
 .button-nav .button-explore-home .span-button-home {
   font-size: 110%;
@@ -777,11 +766,11 @@ template {
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px;
   color: white;
-  box-shadow: 5px 10px 0px #e5e5e5;
+  box-shadow: 5px 7px 0px #e5e5e5;
 }
 .button-place-order .click:hover {
   filter: brightness(1.2);
-  box-shadow: 5px 10px 0px #999999;
+  box-shadow: 5px 7px 0px #999999;
 }
 .button-place-order .click .span-button-order {
   font-size: 110%;
@@ -809,11 +798,11 @@ template {
   border-radius: 30px;
   color: white;
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 5px 10px 0px #e5e5e5;
+  box-shadow: 5px 7px 0px #e5e5e5;
 }
 .button-nav .button-explore-home:hover {
   filter: brightness(1.2);
-  box-shadow: 5px 10px 0px #999999;
+  box-shadow: 5px 7px 0px #999999;
 }
 .button-nav .button-explore-home .span-button-home {
   font-size: 110%;
@@ -840,11 +829,11 @@ template {
   background: linear-gradient(#ff79da, #9356dc);
   border-radius: 30px;
   color: white;
-  box-shadow: 5px 10px 0px #e5e5e5;
+  box-shadow: 5px 7px 0px #e5e5e5;
 }
 .button-place-order .click:hover {
   filter: brightness(1.2);
-  box-shadow: 5px 10px 0px #999999;
+  box-shadow: 5px 7px 0px #999999;
 }
 .button-place-order .click .span-button-order {
   font-size: 110%;
@@ -935,22 +924,22 @@ template {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-animation: heart 3s ease-in-out forwards;
-  animation: heart 2s ease-in-out forwards;
+  -webkit-animation: heart 1s ease-in-out forwards;
+  animation: heart 1s ease-in-out forwards;
 }
 
 .i-card-p-animation, .i-card-p:hover {
   -webkit-text-stroke: 2px #000000;
   background: #9356dc;
   background-position: bottom;
-  background: -webkit-repeating-linear-gradient(45deg, #ff79da, #9356dc);
-  background: -moz-repeating-linear-gradient(45deg, #ff79da, #9356dc);
-  background: repeating-linear-gradient(45deg, #ff79da, #9356dc);
+  background: -webkit-repeating-linear-gradient(0deg, #ff79da, #9356dc);
+  background: -moz-repeating-linear-gradient(0deg, #ff79da, #9356dc);
+  background: repeating-linear-gradient(0deg, #ff79da, #9356dc);
   background-position: bottom 0px center;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: heart 2s ease-in-out forwards;
+  animation: heart 1s ease-in-out forwards;
 }
 
 /*-----------------anim empty-------------*/
@@ -1037,7 +1026,7 @@ template {
   display: flex;
   height: 70px;
   width: 100%;
-  box-shadow: -10px 10px 2px #e5e5e5;
+  box-shadow: 5px 5px 2px #e5e5e5;
   background: #ffffff;
   border-radius: 20px;
   margin-bottom: 15px;
@@ -1073,7 +1062,7 @@ template {
   padding-right: 4%;
   padding-left: 20px;
   transform: translateX(0px);
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 .card-dish-animation .i-c-g, .card-dish .i-c-g {
   display: flex;
@@ -1085,7 +1074,7 @@ template {
   height: 70px;
   transform-origin: right;
   transform: translateX(0);
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 .card-dish-animation .i-coche, .card-dish .i-coche {
   font-size: 100%;
@@ -1094,7 +1083,7 @@ template {
   background: #99e2d0;
   transform: rotate(0deg);
   opacity: 0;
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 .card-dish-animation:hover .dish-text, .card-dish:hover .dish-text {
   display: block;
@@ -1121,8 +1110,8 @@ template {
   height: 55%;
   align-items: flex-end;
   padding-left: 20px;
-  transform: translateX(-10px);
-  transition: 1s linear;
+  transform: translateX(0px);
+  transition: 0.5s linear;
 }
 .card-dish-animation:hover .i-c-g, .card-dish:hover .i-c-g {
   cursor: pointer;
@@ -1134,7 +1123,7 @@ template {
   width: 80px;
   height: 70px;
   transform: translateX(1);
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 .card-dish-animation:hover .i-coche, .card-dish:hover .i-coche {
   font-size: 100%;
@@ -1142,7 +1131,7 @@ template {
   color: white;
   background: #99e2d0;
   transform: rotate(360deg);
-  transition: 0.7s linear;
+  transition: 0.5s linear;
   opacity: 1;
 }
 
@@ -1526,7 +1515,7 @@ hr {
   }
 
   .top-pic-page {
-    height: 500px;
+    height: 520px;
     top: 0;
   }
 
@@ -1561,7 +1550,7 @@ hr {
 }
 @media screen and (min-width: 1200px) {
   .top-pic-page {
-    height: 520px;
+    height: 570px;
   }
 
   .main {
