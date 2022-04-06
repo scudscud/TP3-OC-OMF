@@ -932,14 +932,14 @@ template {
   -webkit-text-stroke: 2px #000000;
   background: #9356dc;
   background-position: bottom;
-  background: -webkit-repeating-linear-gradient(0deg, #ff79da, #9356dc);
-  background: -moz-repeating-linear-gradient(0deg, #ff79da, #9356dc);
-  background: repeating-linear-gradient(0deg, #ff79da, #9356dc);
+  background: -webkit-repeating-linear-gradient(45deg, #ff79da, #9356dc);
+  background: -moz-repeating-linear-gradient(45deg, #ff79da, #9356dc);
+  background: repeating-linear-gradient(45deg, #ff79da, #9356dc);
   background-position: bottom 0px center;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: heart 1s ease-in-out forwards;
+  animation: heart 0.5s ease-in-out forwards;
 }
 
 /*-----------------anim empty-------------*/
@@ -1494,7 +1494,7 @@ hr {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: heart 2s;
+    animation: heart 0.5s;
   }
 
   .starter, .main-course, .dessert {
@@ -1539,13 +1539,13 @@ hr {
     background: #9356dc;
     background-position: bottom;
     background: -webkit-repeating-linear-gradient(45deg, #ff79da, #9356dc);
-    background: -moz-repeating-linear-gradient(90deg #ff79da, #9356dc);
-    background: repeating-linear-gradient(90deg, #ff79da, #9356dc);
+    background: -moz-repeating-linear-gradient(45deg #ff79da, #9356dc);
+    background: repeating-linear-gradient(45deg, #ff79da, #9356dc);
     background-position: bottom 0px center;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: heart 2s;
+    animation: heart 0.5s;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1593,7 +1593,7 @@ hr {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: heart 2s;
+    animation: heart 0.5s;
   }
 
   .starter, .main-course, .dessert {

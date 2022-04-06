@@ -45,7 +45,7 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            animation: heart 2s ;
+            animation: heart 0.5s ;
             
             }
             
@@ -103,13 +103,13 @@
         background: $primary;
         background-position: bottom;
         background: -webkit-repeating-linear-gradient(45deg,$secondary ,$primary );
-        background: -moz-repeating-linear-gradient( 90deg  $secondary ,$primary );
-        background: repeating-linear-gradient( 90deg,$secondary ,$primary );
+        background: -moz-repeating-linear-gradient( 45deg  $secondary ,$primary );
+        background: repeating-linear-gradient( 45deg,$secondary ,$primary );
         background-position: bottom 0px center;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        animation: heart 2s ;
+        animation: heart 0.5s ;
         
         }
         
@@ -164,7 +164,7 @@
               background-clip: text;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent; 
-              animation: heart 2s ;
+              animation: heart 0.5s ;
               
               }
           

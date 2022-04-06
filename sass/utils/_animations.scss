@@ -19,14 +19,14 @@
       -webkit-text-stroke: 2px #000000;
       background: $primary;
       background-position: bottom;
-      background: -webkit-repeating-linear-gradient(0deg, $secondary,$primary );
-      background: -moz-repeating-linear-gradient(0deg,  $secondary, $primary);
-      background: repeating-linear-gradient(0deg, $secondary, $primary);
+      background: -webkit-repeating-linear-gradient(45deg, $secondary,$primary );
+      background: -moz-repeating-linear-gradient(45deg,  $secondary, $primary);
+      background: repeating-linear-gradient(45deg, $secondary, $primary);
       background-position: bottom 0px center;
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: heart 1s ease-in-out forwards ;  
+      animation: heart 0.5s ease-in-out forwards ;  
 
 }
 
