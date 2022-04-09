@@ -62,6 +62,9 @@ $background-white : #ffff;
     justify-content: left;
     font-weight: bold;
     &:hover { 
+        i{
+            color: $primary;
+        }
         background: #f5edff;
         cursor: pointer;
     }
@@ -87,7 +90,8 @@ $background-white : #ffff;
         padding-left: 15%;
         padding-right: 8%;
         color: #7e7e7e;
-            
+
+         
     }
    
 

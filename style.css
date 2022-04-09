@@ -313,6 +313,9 @@ template {
   background: #f5edff;
   cursor: pointer;
 }
+.tuto .fonc-p1:hover i, .tuto .fonc-p2:hover i, .tuto .fonc-p3:hover i {
+  color: #9356dc;
+}
 .tuto .fonc-p1 .num-fonc-tuto, .tuto .fonc-p2 .num-fonc-tuto, .tuto .fonc-p3 .num-fonc-tuto {
   display: flex;
   position: absolute;
