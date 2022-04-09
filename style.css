@@ -934,7 +934,7 @@ template {
   background-position: bottom;
   background: -webkit-repeating-linear-gradient(45deg, #ff79da, #9356dc);
   background: -moz-repeating-linear-gradient(45deg, #ff79da, #9356dc);
-  background: repeating-linear-gradient(45deg, #ff79da, #9356dc);
+  background: repeating-linear-gradient(0deg, #ff79da, #9356dc);
   background-position: bottom 0px center;
   background-clip: text;
   -webkit-background-clip: text;
