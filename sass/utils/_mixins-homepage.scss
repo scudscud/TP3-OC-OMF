@@ -142,7 +142,7 @@ $background-white : #ffff;
     .description{
         display: flex;
         flex-direction: row;
-       width: 92%;
+       width: auto;
        height: 75px;
         @include background-white;
         padding: 15px;
@@ -226,7 +226,7 @@ $background-white : #ffff;
     .description{
         display: flex;
         flex-direction: row;
-       width: 92%;
+       width: auto;
        height: 75px;
         @include background-white;
         padding: 15px;

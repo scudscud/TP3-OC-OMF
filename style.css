@@ -384,7 +384,7 @@ template {
 .card-hp-3 .description, .card-hp-4 .description {
   display: flex;
   flex-direction: row;
-  width: 92%;
+  width: auto;
   height: 75px;
   background: #ffffff;
   padding: 15px;
@@ -461,7 +461,7 @@ template {
 .card-hp-1 .description, .card-hp-2 .description {
   display: flex;
   flex-direction: row;
-  width: 92%;
+  width: auto;
   height: 75px;
   background: #ffffff;
   padding: 15px;
@@ -759,7 +759,6 @@ template {
   height: 100%;
 }
 .button-place-order .click {
-  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
