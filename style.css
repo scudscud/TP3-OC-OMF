@@ -759,6 +759,7 @@ template {
   height: 100%;
 }
 .button-place-order .click {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -822,6 +823,7 @@ template {
   height: 100%;
 }
 .button-place-order .click {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;

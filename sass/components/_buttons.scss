@@ -38,7 +38,8 @@
     height: 100%;
     
     .click{
-        display: flex;
+    cursor: pointer;
+    display: flex;
      justify-content: center;
      align-items: center;
      text-decoration: none;
