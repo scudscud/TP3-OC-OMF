@@ -205,8 +205,8 @@
     background: $tertiary;
     width: 0px;
     height: 70px;
-    transform-origin: right;
-    transform: translateX(0);
+    transform-origin: right ;
+    transform: translateX(1px);
     transition: $duration-anim-coche linear;
     
   }

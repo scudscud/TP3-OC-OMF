@@ -1082,7 +1082,7 @@ template {
   width: 0px;
   height: 70px;
   transform-origin: right;
-  transform: translateX(0);
+  transform: translateX(1px);
   transition: 0.3s linear;
 }
 .card-dish-animation .i-coche, .card-dish .i-coche {
