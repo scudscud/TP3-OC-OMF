@@ -913,6 +913,9 @@ template {
   width: 20px;
   padding-right: 12px;
 }
+.footer li:hover {
+  cursor: pointer;
+}
 
 .footer-contact-deco-none {
   text-decoration: none;
@@ -930,7 +933,7 @@ template {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-animation: heart 1s ease-in-out forwards;
-  animation: heart 0.5s ease-in-out forwards;
+  animation: heart 1s ease-in-out forwards;
 }
 
 .i-card-p-animation, .i-card-p:hover {
@@ -951,7 +954,7 @@ template {
 @-webkit-keyframes heart {
   from {
     /*background-position: 0% 0%;*/
-    height: 30px;
+    height: 0px;
     opacity: 0;
   }
   to {
@@ -963,7 +966,7 @@ template {
 @keyframes heart {
   from {
     /*background-position: 0% 0%;*/
-    height: 30px;
+    height: 0px;
     opacity: 0;
   }
   to {

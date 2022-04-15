@@ -10,7 +10,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;  
     -webkit-animation: heart  1s ease-in-out forwards;
-    animation: heart  0.5s ease-in-out forwards; 
+    animation: heart  1s ease-in-out forwards; 
     
     }
      
@@ -37,7 +37,7 @@
 @-webkit-keyframes heart{
     from{ 
       /*background-position: 0% 0%;*/
-      height: 30px;
+      height: 0px;
       opacity: 0;
     
     }
@@ -51,7 +51,7 @@
 @keyframes heart{
     from{ 
       /*background-position: 0% 0%;*/
-      height: 30px;
+      height: 0px;
       opacity: 0;
     
     }
